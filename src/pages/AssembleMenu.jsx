@@ -3,9 +3,10 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
-import ContactForm from '../containers/ContactForm';
+import AssembleMenuForm from '../containers/AssembleMenuForm';
 import Header from '../components/Header';
 const links=[
+
     {href: 'home', title: 'HOME'},
 {href: 'assemble', title: 'ARMAR MENÚ'},
 {href: 'branch', title: 'SUCURSALES'},
@@ -14,21 +15,21 @@ const links=[
 {href: 'schedule', title: 'HORARIOS'},
 {href: 'login', title: 'CUENTA'}
 
+    
+
 
 ];
 
-export default function Work(){
+export default function AssembleMenu(){
 
     return(
 
 <>
-
-        <Header  title="CONTACTO"/>
-
+<Header  title="ARMAR MENU"/>
          <NavBar links={links} />
-         
-             <ContactForm/>
-             
+       
+             <AssembleMenuForm/>
+           
         
 
     </>

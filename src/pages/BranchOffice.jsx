@@ -3,9 +3,10 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
-import RecoveryForm from '../containers/RecoveryForm';
+import BranchOfficeForm from '../containers/BranchOfficeForm';
 import Header from '../components/Header';
 const links=[
+
     {href: 'home', title: 'HOME'},
     {href: 'assemble', title: 'ARMAR MENÚ'},
     {href: 'branch', title: 'SUCURSALES'},
@@ -20,16 +21,17 @@ const links=[
 
 ];
 
-export default function Recovery(){
+export default function BranchOffice(){
 
     return(
 
 <>
-        <Header  title="CUENTA"/>
+        <Header  title="SUCURSALES"/>
+
          <NavBar links={links} />
-         <Content title="Recuperar Contraseña" >
-             <RecoveryForm/>
-             </Content>
+      
+             <BranchOfficeForm/>
+       
         
 
     </>
@@ -40,6 +42,3 @@ export default function Recovery(){
 
     );
 }
-
-
-

@@ -1,38 +1,194 @@
-.App {
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+*{
+   font-family: verdana,serif,sans-serif;
+
+}
+
+
+nav{
+   text-align: center;
+overflow:hidden;
+background-color: black;
+
+
+}
+
+nav ul{
+        list-style:none;
+
+
+    }
+nav ul li{
+   display:inline;
+ margin-right:20px;
+
+}
+nav ul li a{
+    color:white;;
+    border:none;
+text-decoration: none;
+}
+ 
+nav ul li a:hover{
+     color:grey;
+
+}
+
+
+.formulario{
+
+           background:none;
+           margin-right: auto;
+           margin-left: auto;
+           width:750px;
+           text-align: center;
+          border: none;
+           padding:10px;
+           outline: none;
+        background-color:white;
+        height: 600px;
+        margin-top: 30px;
+}
+
+
+
+header h2{
+  background-color: #F26D6D;
+  color:white;
+  height: 50px;
+  padding-top: 15px;
+}
+ 
+
+
+
+
+input{
+
+  display: block;
+  width: 50%;
+  margin-left: 120px;
+  height: 32px;
+  padding: 6px 12px;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+
+
+}
+.formulario div {
+   text-align: left;
+  margin:20px;
+  
+   
+}
+
+ label{
+   font-size:20px;
+  
+ 
+}
+textarea{
+   display:block;
+   width:100%;
+  font-size:20px;
+}
+.formulario .link{
+   text-align: center;
+  font-size:110%;
+   padding: 10px;
+   justify-content: center;
+}
+select{
+   display:block;
+   width:100%;
+   font-size: 20px;
+  
+
+}
+
+
+.link2  a{
+  text-decoration: none;
+  color: #2FC5C4;
+text-align: right;
+padding-bottom: 40px;
+margin-left: 80%;
+
+}
+
+.link2 a:hover {
+  color:black;
+
+ 
+}
+.link a{
+color:#22A6B3;
+text-decoration: none;
+display: inline;
+
+
+}
+
+.link a:hover{
+     color:black;
+}
+
+h1{
   text-align: center;
+ 
+}
+.boton {
+    background-color:  #F26D6D;
+    border-color: #F26D6D;
+    font-size: 20px;
+    font-family: montserrat;
+    font-style: normal;
+    color:white;
+    border-radius: 20px;
+    width:200px; 
+   }
+   .boton3 {
+    
+    background-color:  #F26D6D;
+    border-color: #F26D6D;
+    font-size: 18px;
+    font-family: montserrat;
+    font-style: normal;
+    color:white;
+    border-radius: 20px;
+    width:300px; 
+    padding-bottom: 10px;
+    padding-top: 10px;
+   }
+   
+   .boton2 {
+    background-color:#FA2525;
+    border-color:#FA2525;
+    font-size: 20px;
+    font-family: montserrat;
+    font-style: normal;
+    color:white;
+    border-radius: 100px;
+    width:300px; 
+
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+   }
+    
+
+
+    .boton:hover{
+
+    color:black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputError{
+   box-shadow: 0px 0px 6px 2px rgb(255,0,0);
 }

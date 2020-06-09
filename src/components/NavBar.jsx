@@ -1,0 +1,41 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
+export default function NavBar(props){
+    
+    return(    
+
+    <nav>
+     <ul>
+         {
+         props.links.map((link,key)=><li key={key}><Link to={link.href}>{link.title}</Link></li>) }
+        </ul>
+
+     </nav>
+
+
+
+    );
+}
+
+/*
+
+function(link){ return <li><a href={link.href}>{link.title}</a></li>} es lo mismo que poner link=><li><a href={link.href}>{link.title}</a></li>
+
+.map(function) lo que hace es traer los objetos de otro lado
+
+props.links.map(function(link){
+    return <li><a href={link.href}>{link.title}</a></li>
+})
+
+
+Es lo mismo que: 
+function transformacion(link){
+    return <li><a href={link.href}>{link.title}</a></li>
+}
+const returnElements=[];
+for(i=0;i<links.length;i++){
+    const link=links[i];
+    returnElements[i]=transformacion(link);
+}
+
+*/

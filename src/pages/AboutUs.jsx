@@ -3,10 +3,12 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
-import ContactForm from '../containers/ContactForm';
+import AboutUsForm from '../containers/AboutUsForm';
 import Header from '../components/Header';
+
 const links=[
-    {href: 'home', title: 'HOME'},
+
+{href: 'home', title: 'HOME'},
 {href: 'assemble', title: 'ARMAR MENÚ'},
 {href: 'branch', title: 'SUCURSALES'},
 {href: 'aboutus', title: 'QUIENES SOMOS'},
@@ -15,19 +17,19 @@ const links=[
 {href: 'login', title: 'CUENTA'}
 
 
+
+
 ];
 
-export default function Work(){
+export default function AboutUs(){
 
     return(
 
 <>
-
-        <Header  title="CONTACTO"/>
-
+        <Header title="QUIENES SOMOS"/>
          <NavBar links={links} />
-         
-             <ContactForm/>
+        
+             <AboutUsForm/>
              
         
 
