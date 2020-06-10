@@ -62,7 +62,7 @@ render(){
         <form >
                    <InputLine 
                    name="email" 
-                   label="EMAIL" 
+                   label="Correo" 
                    type="text" 
                    placeholder="correo@ejemplo.cl" 
                    required={true}
