@@ -25,7 +25,7 @@ export default function AssembleMenu(){
     return(
 
 <>
-<Header  title="ARMAR MENU"/>
+<       Header img="/images/armar.png"  />
          <NavBar links={links} />
        
              <AssembleMenuForm/>

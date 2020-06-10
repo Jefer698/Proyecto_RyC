@@ -59,13 +59,17 @@ header h2{
   padding-top: 15px;
 }
  
-
+img{
+   width: 1650px;
+   height: 300px;
+}
 
 
 
 input{
 
   display: block;
+
   width: 50%;
   margin-left: 120px;
   height: 32px;

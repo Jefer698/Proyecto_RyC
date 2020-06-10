@@ -26,7 +26,7 @@ export default function AboutUs(){
     return(
 
 <>
-        <Header title="QUIENES SOMOS"/>
+        <Header img="/images/about.png"  />
          <NavBar links={links} />
         
              <AboutUsForm/>

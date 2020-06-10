@@ -23,8 +23,7 @@ export default function Work(){
 
 <>
 
-        <Header  title="CONTACTO"/>
-
+        <Header img="/images/contact.png"  />
          <NavBar links={links} />
          
              <ContactForm/>

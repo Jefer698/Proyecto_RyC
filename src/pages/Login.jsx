@@ -25,12 +25,14 @@ export default function Login(){
     return(
 
 <>
-        <Header  title="CUENTA"/>
+     
+        <Header img="/images/img2.png"  />
          <NavBar links={links} />
+      
          <Content title="Login" >
              <LoginForm/>
              </Content>
-      <Footer/>
+            <Footer/>
 
     </>
 

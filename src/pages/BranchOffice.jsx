@@ -26,10 +26,8 @@ export default function BranchOffice(){
     return(
 
 <>
-        <Header  title="SUCURSALES"/>
-
+        <Header img="/images/sucursales.png"  />
          <NavBar links={links} />
-      
              <BranchOfficeForm/>
        
         

@@ -24,7 +24,7 @@ export default function Register(){
     return(
 
 <>
-        <Header  title="CUENTA"/>
+        <Header img="/images/img2.png"  />
          <NavBar links={links} />
          <Content title="REGISTRO" >
              <RegisterForm/>

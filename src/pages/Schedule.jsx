@@ -24,7 +24,7 @@ export default function Schedule(){
     return(
 
 <>
-        <Header  title="HORARIOS"/>
+        <Header img="/images/horarios.png"  />
          <NavBar links={links} />
     
              <ScheduleForm/>
