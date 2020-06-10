@@ -46,3 +46,4 @@ export function validateName(value,compareValue){
     }
     return true;
 }
+

@@ -7,7 +7,7 @@ render(){
     return(
         <>
         
-       <h1>INICIO</h1>
+       <h1>hola</h1>
     
        </>
        
