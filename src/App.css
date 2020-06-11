@@ -4,29 +4,31 @@
 
 }
 
-
 nav{
    text-align: center;
 overflow:hidden;
 background-color: black;
-
+position: -webkit-sticky;
 
 }
 
+
 nav ul{
         list-style:none;
-
+     
 
     }
 nav ul li{
    display:inline;
  margin-right:20px;
 
+
 }
 nav ul li a{
     color:white;;
     border:none;
 text-decoration: none;
+
 }
  
 nav ul li a:hover{
@@ -60,18 +62,20 @@ header h2{
 }
  
 img{
-   width: 1080px;
-   height: 720px;
+   width: 1920px;
+   height: 100px;
    image-orientation: flip;
 }
 
-
+.h{
+  background-image: url("https://thumbs.dreamstime.com/b/fondo-s%C3%B3lido-del-dril-de-algod%C3%B3n-azul-primer-textura-134441981.jpg");
+}
 
 input{
 
-  display: block;
+  display: inline;
 
-  width: 50%;
+  width: 70%;
   margin-left: 120px;
   height: 32px;
   padding: 6px 12px;
@@ -84,6 +88,38 @@ input{
 
 
 }
+.bg{
+   background-image: url("https://fondosmil.com/fondo/7687.png");
+   height: 600px;
+   padding-top: 40px;
+}
+.fobg{
+   background-image: url("https://images5.alphacoders.com/456/thumb-1920-456536.jpg");
+   height: 100px;
+   padding-top: 1px;
+   padding-bottom: 15px;
+}
+.app{
+
+overflow: hidden;
+ background-color: black;
+}
+
+.a1{
+   
+   float: left;
+
+   
+}
+.a2{
+  
+   float: left;
+}
+.a3{
+   float: left;
+    
+}
+
 .formulario div {
    text-align: left;
   margin:20px;
@@ -107,14 +143,6 @@ textarea{
    padding: 10px;
    justify-content: center;
 }
-select{
-   display:block;
-   width:100%;
-   font-size: 20px;
-  
-
-}
-
 
 .link2  a{
   text-decoration: none;
@@ -155,6 +183,7 @@ h1{
     color:white;
     border-radius: 20px;
     width:200px; 
+   
    }
    .boton3 {
     
@@ -196,4 +225,11 @@ h1{
 
 .inputError{
    box-shadow: 0px 0px 6px 2px rgb(255,0,0);
+}
+select{
+   
+      display:inline-block;
+      width:300px;
+      font-size: 20px;
+     height: 50px;
 }

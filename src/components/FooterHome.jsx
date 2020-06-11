@@ -7,9 +7,7 @@ export default function Header(props){
 
      
           
-         
-              <img src={img}/>
-        
+         <p></p>
                         
            
           

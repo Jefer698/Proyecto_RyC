@@ -1,8 +1,8 @@
 import React from 'react';
-
+import NavBarHome from '../components/NavbarHome';
 import HomeForm from '../containers/HomeForm';
 import Header from '../components/Header';
-
+import FooterHome from '../components/FooterHome';
 
 
 
@@ -11,18 +11,19 @@ export default function Home(){
 
     return(
 
+<>
+<section className="bg">
 
-       <section>
+
+ 
+       <NavBarHome/>
+     
  <HomeForm/>
-       </section>
 
-
-
-
-
-
-
-
-
+ </section>
+ <div className="fobg">
+ <FooterHome />
+ </div>
+ </>
     );
 }

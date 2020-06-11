@@ -5,7 +5,7 @@ export default function SelectLine(props){
 return(
 <>
     <LineField label={label}>
-    <select 
+    <select     
     required={required}
     onChange={(event)=>onChange(name,event)}
     className={error?'inputError':undefined}

@@ -14,7 +14,8 @@ export default function InputLine(props){
         onChange,
         name,
         error,
-        value
+        value,
+        onClick
         }=props;
     /*
 const label = props label;
@@ -42,6 +43,7 @@ if(error === true){
          maxLength={maxLength}
          min={min}
          max={max} 
+         onClick={onClick}
          step={step}
          onChange={(event) => onChange(name,event)}
          className={error ? 'inputError':undefined}
