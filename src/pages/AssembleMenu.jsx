@@ -26,10 +26,10 @@ export default function AssembleMenu(){
 
 <>
 
-        <div className="lg">
-           <HeaderBg />
-           <h1 className="cuenta">CUENTA</h1>
-       </div>
+<div className="armar">
+         
+         <h1 className="armart">ARMAR MENU</h1>
+     </div>
          <NavBar links={links} />
        
              <AssembleMenuForm/>

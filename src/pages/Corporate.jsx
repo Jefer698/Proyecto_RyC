@@ -2,8 +2,8 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
 import CorporateForm from '../containers/CorporateForm';
-import HeaderBg from '../components/HeaderBg';
-import ContainedButtons from '../components/bu';
+
+
 const links=[
     {href: 'home', title: 'HOME'},
     {href: 'assemble', title: 'ARMAR MENÚ'},
@@ -24,13 +24,13 @@ export default function Corporate(){
 
 <>
      
-        <div className="lg">
-           <HeaderBg />
-           <h1 className="cuenta">CUENTA</h1>
+        <div className="corp">
+         
+           <h1 className="corpt">CORPORATIVO</h1>
        </div>
          <NavBar links={links} />
     
-         <ContainedButtons/>
+     
              
         
 

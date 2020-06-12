@@ -36,6 +36,10 @@ nav ul li a:hover{
   
 
 }
+.workcentrar{
+   text-align: center;
+
+}
 
 
 .formulario{
@@ -94,6 +98,116 @@ input{
    background-image: url("https://images6.alphacoders.com/100/1002209.jpg");
    height: 300px;
    padding-top: 1px;
+}
+.aboutg{
+   background-image: url("https://lacocinadeserrats.com/wp-content/uploads/atun-claro-header-1920x300.jpg");
+   height: 300px;
+   padding-top: 1px;
+
+}
+.about{
+   color:white;
+   background-color: hsla(200, 17%, 3%, 0.59);
+   text-align: center;
+   width:900px;
+   margin-left: 320px;
+   margin-top: 100px;
+   font-size: 80px;
+}
+.armar{
+   background-image: url("https://recetasdeisabel.com/wp-content/uploads/2017/09/C%C3%93MO-HACER-MANTEQUILLA-EN-DIEZ-MINUTOS-SLIDER-1920-X-590-1920x300.jpg");
+   height: 300px;
+   padding-top: 1px;
+
+}
+.armart{
+   color:white;
+   background-color: hsla(200, 17%, 3%, 0.59);
+   text-align: center;
+   width:700px;
+   margin-left: 400px;
+   margin-top: 100px;
+   font-size: 80px;
+}
+
+.local{
+   background-image: url("https://acomer.pe/wp-content/uploads/2019/11/churros-fondo-1920x300.jpg");
+   height: 300px;
+   padding-top: 1px;
+
+}
+.localt{
+   color:white;
+   background-color: hsla(200, 17%, 3%, 0.59);
+   text-align: center;
+   width:700px;
+   margin-left: 400px;
+   margin-top: 100px;
+   font-size: 80px;
+}
+
+.contacto{
+   background-image: url("https://umcoecuador.com/recetas/wp-content/uploads/2016/06/tips-1920x300.jpg");
+   height: 300px;
+   padding-top: 1px;
+
+}
+.contactot{
+   color:white;
+   background-color: hsla(200, 17%, 3%, 0.59);
+   text-align: center;
+   width:600px;
+   margin-left: 470px;
+   margin-top: 100px;
+   font-size: 80px;
+}
+
+.horario{
+   background-image: url("https://recetasdeisabel.com/wp-content/uploads/2016/09/FLAN-DE-QUESITOS-SIN-HORNO-NI-HUEVOS-SLIDER-1920-X-590-1920x300.jpg");
+   height: 300px;
+   padding-top: 1px;
+
+}
+.horariot{
+   color:white;
+   background-color: hsla(200, 17%, 3%, 0.59);
+   text-align: center;
+   width:600px;
+   margin-left: 470px;
+   margin-top: 100px;
+   font-size: 80px;
+}
+
+.work{
+   background-image: url("https://www.canalrcn.com/nuestra-cocina/wp-content/uploads/2019/12/BELLA-CIAO-sin-texto-1920x300.jpg");
+   height: 300px;
+   padding-top: 1px;
+
+}
+.workt{
+   color:white;
+   background-color: hsla(200, 17%, 3%, 0.59);
+   text-align: center;
+   width:600px;
+   margin-left: 470px;
+   margin-top: 100px;
+   font-size: 80px;
+}
+
+.corp{
+   background-image: url("https://cocinaypunto.com/wp-content/uploads/2016/07/Slider-1920x300.jpg");
+   height: 300px;
+   padding-top: 1px;
+
+}
+.corpt{
+   color:white;
+   background-color: hsla(200, 17%, 3%, 0.59);
+   text-align: center;
+   width:800px;
+   margin-left: 400px;
+   margin-top: 100px;
+   font-size: 80px;
 }
 .bg{
    background-image: url("https://fondosmil.com/fondo/7687.png");

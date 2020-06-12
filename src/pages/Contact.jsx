@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
 import ContactForm from '../containers/ContactForm';
-import HeaderBg from '../components/HeaderBg';
+
 const links=[
     {href: 'home', title: 'HOME'},
 {href: 'assemble', title: 'ARMAR MENÚ'},
@@ -24,9 +24,9 @@ export default function Work(){
 <>
 
         
-       <div className="lg">
-           <HeaderBg />
-           <h1 className="cuenta">CUENTA</h1>
+       <div className="contacto">
+          
+           <h1 className="contactot">CONTACTO</h1>
        </div>   
          <NavBar links={links} />
          

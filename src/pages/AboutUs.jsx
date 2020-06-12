@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
 import AboutUsForm from '../containers/AboutUsForm';
-import HeaderBg from '../components/HeaderBg';
+
 
 const links=[
 
@@ -27,9 +27,9 @@ export default function AboutUs(){
 
 <>
       
-    <div className="lg">
-           <HeaderBg />
-           <h1 className="cuenta">CUENTA</h1>
+    <div className="aboutg">
+         
+           <h1 className="about">QUIENES SOMOS</h1>
        </div>
          <NavBar links={links} />
         
