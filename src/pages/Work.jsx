@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
-import WorkForm from '../containers/WorkForm';
+import ComplexGrid from '../containers/WorkForm';
 
 const links=[
     {href: 'home', title: 'HOME'},
@@ -31,7 +31,7 @@ export default function Work(){
        </div>
          <NavBar links={links} />
     
-             <WorkForm/>
+             <ComplexGrid/>
              
         
 
