@@ -9,6 +9,8 @@ import BranchOffice from './pages/BranchOffice';
 import Contact from './pages/Contact';
 import Schedule from './pages/Schedule';
 import Work from './pages/Work';
+import SelectionMenu from './pages/SelectionMenu';
+import Corporate from './pages/Corporate';
 import './App.css';
 import { 
   BrowserRouter as Router,
@@ -52,6 +54,12 @@ function App() {
       </Route>
       <Route path="/work">
         <Work/>
+      </Route>
+      <Route path="/selection">
+        <SelectionMenu/>
+      </Route>
+      <Route path="/corporate">
+        <Corporate/>
       </Route>
     
       </Switch>

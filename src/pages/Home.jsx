@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBarHome from '../components/NavbarHome';
+import NavBarHome from '../containers/NavbarHome';
 import HomeForm from '../containers/HomeForm';
 import Header from '../components/Header';
 import FooterHome from '../components/FooterHome';

@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
 import AssembleMenuForm from '../containers/AssembleMenuForm';
-import Header from '../components/Header';
+import HeaderBg from '../components/HeaderBg';
 const links=[
 
     {href: 'home', title: 'HOME'},
@@ -25,7 +25,11 @@ export default function AssembleMenu(){
     return(
 
 <>
-<       Header img="/images/armar.png"  />
+
+        <div className="lg">
+           <HeaderBg />
+           <h1 className="cuenta">CUENTA</h1>
+       </div>
          <NavBar links={links} />
        
              <AssembleMenuForm/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import LineField from './LineField';
-export default function InputLine(props){
+export default function InputLineHome(props){
     const {label,
         type,
         placeholder,
@@ -37,7 +37,9 @@ if(error === true){
         <>
         <LineField label={label}>
         
-        <input type={type} 
+        <input
+        classname="inhome"
+        type={type} 
         placeholder={placeholder} 
         required={required}
          minLength={minLength} 

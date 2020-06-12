@@ -3,6 +3,7 @@
         import SelectLine from '../components/SelectLine';
         import InputLine from '../components/InputLine';
         import {isEmpty} from '../utils/Validations';
+   
         const locations=[
         {value:'',label:'Seleccionar Comuna...'},
         {value:'santiago', label:'Santiago'},
@@ -78,7 +79,7 @@
             return(
               < >
         
-                <form className="app" >
+                <div className="navhome" >
         <div className="a1">
         
         <SelectLine 
@@ -97,8 +98,9 @@
                 <div className="a2">
                 <InputLine 
                            name="dire" 
-                        
+                           
                            type="text" 
+                           
                            placeholder="Calle y numero de puerta" 
                            required={true}
                             onChange={this.onChange}
@@ -108,15 +110,11 @@
                             />
                         </div>
         
-                        <div className="a3">
-                          <InputLine
-                          name="boton"
-                          type="submit"
-                          onClick={this.doHome}
-        
-            />
-               </div>
-                </form>
+                       
+            <button className="buscar" onClick={this.doHome}>BUSCAR</button>
+          
+              
+                </div>
                 
                </>
         

@@ -1,7 +1,7 @@
 import React from 'react';
 import InputLine from '../components/InputLine';
 import {validatePassword,validateEmail} from '../utils/Validations';
-
+import PersonIcon from '@material-ui/icons/Person';
 
 export default class LoginForm extends React.Component{
 state={
@@ -60,7 +60,8 @@ render(){
     return(
         <>
         <form >
-                   <InputLine 
+           
+                   <InputLine
                    name="email" 
                    label="Correo" 
                    type="text" 
@@ -68,9 +69,10 @@ render(){
                    required={true}
                     onChange={this.onChange}
                     error={errors.email}
-                    value={email}
-
-                    />
+                    value={email} 
+                  />
+              
+         
                    <InputLine
                     name="password" 
                     label="Contraseña"
@@ -89,7 +91,7 @@ render(){
                <a href="recovery">Olvidaste tu contraseña?</a>
     
                         </div>
-                        <p>o</p>
+                        <p classname="o">O</p>
                 <div className="link">
         
                        <a href="register">Registrate</a>
@@ -100,3 +102,4 @@ render(){
 }
    
 }
+

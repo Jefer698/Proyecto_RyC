@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
 import BranchOfficeForm from '../containers/BranchOfficeForm';
-import Header from '../components/Header';
+import HeaderBg from '../components/HeaderBg';
 const links=[
 
     {href: 'home', title: 'HOME'},
@@ -26,7 +26,11 @@ export default function BranchOffice(){
     return(
 
 <>
-        <Header img="/images/sucursales.png"  />
+        
+       <div className="lg">
+           <HeaderBg />
+           <h1 className="cuenta">CUENTA</h1>
+       </div>
          <NavBar links={links} />
              <BranchOfficeForm/>
        

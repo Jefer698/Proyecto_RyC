@@ -22,17 +22,18 @@ nav ul li{
    display:inline;
  margin-right:20px;
 
-
 }
 nav ul li a{
     color:white;;
     border:none;
 text-decoration: none;
 
+
 }
  
 nav ul li a:hover{
      color:grey;
+  
 
 }
 
@@ -63,8 +64,10 @@ header h2{
  
 img{
    width: 1920px;
-   height: 100px;
-   image-orientation: flip;
+   height: 300px;
+
+
+
 }
 
 .h{
@@ -73,64 +76,223 @@ img{
 
 input{
 
-  display: inline;
+  display: block;
 
   width: 70%;
-  margin-left: 120px;
-  height: 32px;
+ margin-top: 10px;
   padding: 6px 12px;
   font-size: 13px;
   line-height: 1.42857143;
   color: #555;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 20px;
+  
 
 
+}
+.lg{
+   background-image: url("https://images6.alphacoders.com/100/1002209.jpg");
+   height: 300px;
+   padding-top: 1px;
 }
 .bg{
    background-image: url("https://fondosmil.com/fondo/7687.png");
-   height: 600px;
+   height: 700px;
    padding-top: 40px;
 }
+.m1{
+   width:100px;
+   height: 100px;
+}
+
+
+ 
+.cuenta{
+   color:white;
+   background-color: hsla(200, 17%, 3%, 0.59);
+   text-align: center;
+   width:450px;
+   margin-left: 535px;
+   margin-top: 100px;
+   font-size: 80px;
+  
+   
+}
+ 
 .fobg{
    background-image: url("https://images5.alphacoders.com/456/thumb-1920-456536.jpg");
    height: 100px;
-   padding-top: 1px;
+  padding-top: 1px;
    padding-bottom: 15px;
 }
-.app{
+.navhome{
 
-overflow: hidden;
- background-color: black;
+ background-color: black;  
+ overflow: hidden;
+ height: 60px;
 }
-
-.a1{
+select{
    
-   float: left;
-
-   
+   display:inline-block;
+   width:300px;
+   font-size: 20px;
+  height: 33px;
+  margin-top: 14px;
+  margin-left: 400px;
 }
 .a2{
   
    float: left;
+   width: 350PX; 
+   margin-top: 4.5px;
 }
-.a3{
+
+.buscar{
    float: left;
-    
+   overflow: hidden;
+   border-radius: 40PX;
+   margin-top: 10px;
+   height: 40px;
+   width: 120px;
+   background-color: #A60A6F;
+   COLOR:WHITE;
+   border: 1px solid #ccc;
+   border-color: #A60A6F;
 }
+.rico{
+   text-align: center;
+   border-radius: 100px;
+   background-color:#D5CC9D;
+   width:550px;
+   height: 100px;
+   margin-top: 30px;
+ margin-left: 480px;
+ padding-top: 25px;
+ font-family: Montez;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 70px;
+ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
+.lis1{
+
+   overflow: hidden;
+  margin-left: 18px;
+   margin-bottom: 40px;
+  
+}
+.lis2{
+  
+   overflow: hidden;
+   margin-left: 18px;
+   margin-bottom: 40px;
+
+}
+.lis3{
+  
+   overflow: hidden;
+  margin-left: 18px;
+   margin-bottom: 40px;
+ 
+}
+.text{
+   margin-left: 53px;
+   text-decoration: none;
+   color: white;
+  }
+  .text2{
+   margin-left: 91px;
+   text-decoration: none;
+   color: white;
+  }
+  .text3{
+   margin-left: 93px;
+   text-decoration: none;
+   color: white;
+  }
+  .text4{
+   margin-left: 100px;
+   text-decoration: none;
+   color: white;
+   margin-left: 74px;
+  
+  }
+  .text5{
+   margin-left: 150px;
+   text-decoration: none;
+   color: white;
+   margin-left: 103px;
+  
+  }
+  .text6{
+
+   text-decoration: none;
+   color: white;
+   margin-left: 30px;
+  
+  }
+  .text7{
+   margin-left: 95px;
+   text-decoration: none;
+   color: white;
+  }
+  .text8{
+   margin-left: 75px;
+   text-decoration: none;
+   color: white;
+  }
+  .text9{
+   margin-left: 85px;
+   margin-right: 85px;
+   text-decoration: none;
+   color: white;
+   margin-top: 20px;
+   
+  }
+  
+.opciones{
+   
+ float: left;
+ 
+ height: 70px;
+ width: 320px;
+ border-radius: 40px;
+ font-size: 18px;
+ background-color: #F29D35;
+ color: white;
+ font-family: Montserrat;
+font-style: italic;
+font-weight: 900;
+line-height: 61px;
+margin-left: 230px;
+margin-right: -200px;
+
+
+}
+.o{
+   color:white;
+}
+.a1{
+   
+   float: left;   
+ 
+}
+
+.home{
+   border-radius: 40px;
+   background-color: blue;
+}
+
 
 .formulario div {
    text-align: left;
   margin:20px;
-  
-   
+    
 }
 
  label{
    font-size:20px;
-  
- 
+   
 }
 textarea{
    display:block;
@@ -155,7 +317,6 @@ margin-left: 80%;
 
 .link2 a:hover {
   color:black;
-
  
 }
 .link a{
@@ -163,17 +324,15 @@ color:#22A6B3;
 text-decoration: none;
 display: inline;
 
-
 }
 
 .link a:hover{
      color:black;
 }
 
-h1{
-  text-align: center;
- 
-}
+
+
+
 .boton {
     background-color:  #F26D6D;
     border-color: #F26D6D;
@@ -183,8 +342,8 @@ h1{
     color:white;
     border-radius: 20px;
     width:200px; 
-   
    }
+  
    .boton3 {
     
     background-color:  #F26D6D;
@@ -216,8 +375,6 @@ h1{
 
    }
     
-
-
     .boton:hover{
 
     color:black;
@@ -225,11 +382,4 @@ h1{
 
 .inputError{
    box-shadow: 0px 0px 6px 2px rgb(255,0,0);
-}
-select{
-   
-      display:inline-block;
-      width:300px;
-      font-size: 20px;
-     height: 50px;
 }
