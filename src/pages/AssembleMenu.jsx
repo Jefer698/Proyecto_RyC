@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
-import AssembleMenuForm from '../containers/AssembleMenuForm';
+import CustomizedSelects from '../containers/AssembleMenuForm';
 import HeaderBg from '../components/HeaderBg';
 const links=[
 
@@ -32,7 +32,7 @@ export default function AssembleMenu(){
      </div>
          <NavBar links={links} />
        
-             <AssembleMenuForm/>
+             <CustomizedSelects/>
            
         
 

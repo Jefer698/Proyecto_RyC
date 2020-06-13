@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import ButtonBase from '@material-ui/core/ButtonBase';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -53,6 +54,22 @@ const useStyles = makeStyles((theme) => ({
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
   },
+  paper: {
+    padding: theme.spacing(2),
+    margin: 'auto',
+    width:750,
+  },
+  image: {
+    width: 250,
+    height: 300,
+
+  },
+  img: {
+    margin: 'auto',
+    display: 'block',
+    maxWidth: '100%',
+    maxHeight: '100%',
+  },
   
 }));
 
@@ -81,30 +98,107 @@ export default function VerticalTabs() {
         <Tab label="Menu 3" {...a11yProps(2)} />
         <Tab label="Menu 4" {...a11yProps(3)} />
         <Tab label="Menu 5" {...a11yProps(4)} />
-        <Tab label="Menu 6" {...a11yProps(5)} />
-        <Tab label="Menu 7" {...a11yProps(6)} />
+
       </Tabs>
       <div className="tab1">
       <TabPanel  value={value} index={0}>
-       Menu 1 
-        <h2>DETALLE</h2>
-        <h3>Imagen</h3>  
+      <Grid  container spacing={3}>
+        <Grid  item xs={6}>
+          <Paper  className={classes.paper}>
+          <Grid container spacing={2}>
+          <Grid item>
+              
+            <ButtonBase className={classes.image}>
+              <img className={classes.img} alt="complex" src="images/especias.jpg" />
+            </ButtonBase>
+          </Grid>
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography gutterBottom variant="subtitle1">
+               <p className="titulo"> CAZUELA DE POLLO</p>
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                 <div className="detail"> Detalle:</div> 
+                 <p className="parrafo"> Elaborado con una presa de carne de vacuno,</p>
+                 <p className="parrafo"> de pollo, de pavo, de ganso o de gallina de </p>
+                 <p className="parrafo"> campo, más verduras variadas: zapallo, choclo,papa.</p>
+                   
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                 <p className="detail">Ensalada:</p>  
+                 <p className="parrafo">Lechuga</p>
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                <p className="detail">Postre:</p>  
+                 <p className="parrafo">Helado</p>
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                <p className="detail">Jugo o Bebida:</p>  
+                 <p className="parrafo">Coca Cola</p>
+                </Typography>
+              
+              </Grid>
+              
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1"><h2 className="precio">$5000</h2></Typography>
+            </Grid>
+          </Grid>
+        </Grid>
+          </Paper>
+        </Grid>    
+        </Grid>
       </TabPanel>
       <TabPanel  value={value} index={1}>
-     <h1 className="menu2">MENU 2</h1>
+
  
         <Grid  container spacing={3}>
         <Grid  item xs={6}>
-          <Paper  className={classes.paper}><p>Elaborado con una presa de carne de vacuno,</p><p>de pollo, de pavo, de ganso o de gallida de</p><p>campo,mas verduras variadas:zapallo,choclo,papa.</p></Paper>
+          <Paper  className={classes.paper}>
+          <Grid container spacing={2}>
+          <Grid item>
+              
+            <ButtonBase className={classes.image}>
+              <img className={classes.img} alt="complex" src="images/especias.jpg" />
+            </ButtonBase>
+          </Grid>
+          <Grid item xs={12} sm container>
+            <Grid item xs container direction="column" spacing={2}>
+              <Grid item xs>
+                <Typography gutterBottom variant="subtitle1">
+               <p className="titulo"> TALLARINES CON POLLO</p>
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                 <div className="detail"> Detalle:</div> 
+                 <p className="parrafo"> Elaborado con una presa de pollo,</p>
+                 <p className="parrafo"> acompañado de fideos y salsa de tomate</p>
+            
+                   
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                 <p className="detail">Ensalada:</p>  
+                 <p className="parrafo">Apio con limon</p>
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                <p className="detail">Postre:</p>  
+                 <p className="parrafo">Arroz con leche</p>
+                </Typography>
+                <Typography variant="body2" gutterBottom>
+                <p className="detail">Jugo o Bebida:</p>  
+                 <p className="parrafo">Jugo de naranja</p>
+                </Typography>
+              
+              </Grid>
+              
+            </Grid>
+            <Grid item>
+              <Typography variant="subtitle1"><h2 className="precio">$5000</h2></Typography>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid item xs={3}>
-          <Paper  className={classes.paper}> <img className="m2" src="images/especias.jpg"/></Paper>
-        </Grid>
-    
-        <Grid item xs={3}>
-          <Paper  className={classes.paper}> <h1>Precio</h1><h1>$5000</h1></Paper>
-        </Grid>
-        
+          </Paper>
+        </Grid>    
         </Grid>
      
       </TabPanel>
@@ -114,22 +208,12 @@ export default function VerticalTabs() {
         <h3>Imagen</h3>  
       </TabPanel>
       <TabPanel value={value} index={3}>
-      <h1>Menu 6</h1> 
+      <h1>Menu 4</h1> 
         <h2>DETALLE</h2>
         <h3>Imagen</h3>  
       </TabPanel>
       <TabPanel value={value} index={4}>
-      <h1>Menu 6</h1> 
-        <h2>DETALLE</h2>
-        <h3>Imagen</h3>  
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-      <h1>Menu 6</h1> 
-        <h2>DETALLE</h2>
-        <h3>Imagen</h3>  
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-      <h1>Menu 7</h1> 
+      <h1>Menu 5</h1> 
         <h2>DETALLE</h2>
         <h3>Imagen</h3>  
       </TabPanel>
