@@ -11,6 +11,7 @@ import Schedule from './pages/Schedule';
 import Work from './pages/Work';
 import SelectionMenu from './pages/SelectionMenu';
 import Corporate from './pages/Corporate';
+import MenuSemanal from './pages/MenuSemanal';
 import './App.css';
 import { 
   BrowserRouter as Router,
@@ -60,6 +61,9 @@ function App() {
       </Route>
       <Route path="/corporate">
         <Corporate/>
+      </Route>
+      <Route path="/menusemanal">
+        <MenuSemanal/>
       </Route>
     
       </Switch>

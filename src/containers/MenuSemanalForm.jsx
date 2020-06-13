@@ -1,9 +1,6 @@
 import React from 'react';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
-import InputBase from '@material-ui/core/InputBase';
 import PropTypes from 'prop-types';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
@@ -11,48 +8,6 @@ import Box from '@material-ui/core/Box';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
-import Input from '@material-ui/core/Input';
-import InputAdornment from '@material-ui/core/InputAdornment';
-import ListAltIcon from '@material-ui/icons/ListAlt';
-
-
-
-
-
-const BootstrapInput = withStyles((theme) => ({
-    root: {
-      'label + &': {
-        marginTop: theme.spacing(3),
-      },
-    },
-    input: {
-      borderRadius: 4,
-      position: 'relative',
-      backgroundColor: theme.palette.background.paper,
-      border: '1px solid #ced4da',
-      fontSize: 16,
-      padding: '10px 26px 10px 12px',
-      transition: theme.transitions.create(['border-color', 'box-shadow']),
-      // Use the system font instead of the default Roboto font.
-      fontFamily: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-      ].join(','),
-      '&:focus': {
-        borderRadius: 4,
-        borderColor: '#80bdff',
-        boxShadow: '0 0 0 0.2rem rgba(0,123,255,.25)',
-      },
-    },
-  }))(InputBase);
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -102,11 +57,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     margin: 'auto',
-    height:370,
     width:750,
-  },
-  margin: {
-    margin: theme.spacing(1),
   },
   image: {
     width: 250,
@@ -125,12 +76,11 @@ const useStyles = makeStyles((theme) => ({
 export default function VerticalTabs() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
-  const [age, setAge] = React.useState('');
+
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    setAge(event.target.value);
   };
- 
+
   return (
       <div className="tab">
     <div className={classes.root}>
@@ -187,22 +137,6 @@ export default function VerticalTabs() {
                 <p className="detail">Jugo o Bebida:</p>  
                  <p className="parrafo">Coca Cola</p>
                 </Typography>
-                <Typography variant="body2" gutterBottom>
-                <div className="selectionicon">
-        <FormControl className={classes.margin}>
-        <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
-        <Input
-          id="input-with-icon-adornment"
-          startAdornment={
-            <InputAdornment position="start">
-              <ListAltIcon />
-            </InputAdornment>
-          }
-        />
-      </FormControl>
-      </div>
-                </Typography>
-                
               
               </Grid>
               
@@ -254,22 +188,6 @@ export default function VerticalTabs() {
                 <p className="detail">Jugo o Bebida:</p>  
                  <p className="parrafo">Jugo de naranja</p>
                 </Typography>
-                
-                <Typography variant="body2" gutterBottom>
-               <div className="selectionicon">
-        <FormControl className={classes.margin}>
-        <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
-        <Input
-          id="input-with-icon-adornment"
-          startAdornment={
-            <InputAdornment position="start">
-              <ListAltIcon />
-            </InputAdornment>
-          }
-        />
-      </FormControl>
-      </div>
-                </Typography>
               
               </Grid>
               
@@ -277,11 +195,8 @@ export default function VerticalTabs() {
             <Grid item>
               <Typography variant="subtitle1"><h2 className="precio">$5000</h2></Typography>
             </Grid>
-            
           </Grid>
         </Grid>
-       
-     
           </Paper>
         </Grid>    
         </Grid>

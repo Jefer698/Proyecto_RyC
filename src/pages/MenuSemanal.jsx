@@ -3,10 +3,11 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
-import BranchOfficeForm from '../containers/BranchOfficeForm';
-import ActionsInExpansionPanelSummary from '../containers/AssembleMenuForm';
-const links=[
+import VerticalTabs from '../containers/MenuSemanalForm';
+import HeaderBg from '../components/HeaderBg';
+import CustomizedTables from '../components/Table';
 
+const links=[
     {href: 'home', title: 'HOME'},
     {href: 'assemble', title: 'ARMAR MENÚ'},
     {href: 'branch', title: 'SUCURSALES'},
@@ -18,25 +19,23 @@ const links=[
     
 
 
-
 ];
 
-export default function BranchOffice(){
+export default function Work(){
 
     return(
 
 <>
-        
-       <div className="local">
-        
-           <h1 className="localt">ARMAR MENU</h1>
+    
+        <div className="lg">
+           <HeaderBg />
+           <h1 className="cuenta">CUENTA</h1>
        </div>
-       <div className="armarbg">
          <NavBar links={links} />
-      
-             <ActionsInExpansionPanelSummary/>
-             </div>
-       
+    
+             <VerticalTabs/>
+          
+             
         
 
     </>

@@ -46,9 +46,28 @@ nav ul{
      display: inline;
      margin-left: 6px;
   }
-  .precio{
- 
+  .selectionicon{
+    
+     margin-left: 160px;
+     margin-top: 30px;
+     
   }
+  .inputicon{
+     margin-left: 15px;
+     margin-bottom: 30px;
+     text-align: right;
+  }
+  .armarmenu{
+     margin-left: 200px;
+     margin-top: 40px;
+     color:white;
+     
+  }
+  .armarbg{
+     background-image: url("https://fondosmil.com/fondo/27737.jpg");
+     margin-top: -40px;
+  }
+  
 nav ul li{
    display:inline;
  margin-right:20px;

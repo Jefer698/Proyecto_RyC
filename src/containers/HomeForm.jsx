@@ -18,10 +18,10 @@ render(){
      <h1 className="rico">RICO Y SANO</h1>
         <div className="lis1">
         <div className="opciones">
-        <a href="selection" className="text">SELECCIONAR MENU</a>
+        <a href="menusemanal" className="text">MENU SEMANAL</a>
         </div>
         <div className="opciones">
-        <a href="assemble" className="text2">ARMAR MENU</a>
+        <a href="selection" className="text2">SELECCIONAR MENU</a>
         </div>
         <div className="opciones">
         <a href="branch" className="text3">SUCURSALES</a>

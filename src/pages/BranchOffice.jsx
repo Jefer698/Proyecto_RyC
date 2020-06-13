@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
-import BranchOfficeForm from '../containers/BranchOfficeForm';
+import LabelBottomNavigation from '../containers/block';
 
 const links=[
 
@@ -32,7 +32,7 @@ export default function BranchOffice(){
            <h1 className="localt">SUCURSALES</h1>
        </div>
          <NavBar links={links} />
-             <BranchOfficeForm/>
+             <LabelBottomNavigation/>
        
         
 
