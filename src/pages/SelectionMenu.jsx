@@ -3,7 +3,7 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
-import CustomizedSelects from '../containers/SelectionMenuForm';
+import CustomizedSelects from '../containers/SelectionMenu/SelectionMenuForm';
 import HeaderBg from '../components/HeaderBg';
 const links=[
 

@@ -3,9 +3,9 @@ import React from 'react';
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
-import VerticalTabs from '../containers/MenuSemanalForm';
+import VerticalTabs from '../containers/MenuSemanal/MenuSemanalForm';
 import HeaderBg from '../components/HeaderBg';
-import CustomizedTables from '../components/Table';
+
 
 const links=[
     {href: 'home', title: 'HOME'},

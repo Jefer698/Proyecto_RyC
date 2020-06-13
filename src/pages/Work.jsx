@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Content from '../components/Content';
 import ComplexGrid from '../containers/WorkForm';
-
+import ActionsInExpansionPanelSummary from '../components/Checklist/Checklist';
 const links=[
     {href: 'home', title: 'HOME'},
     {href: 'assemble', title: 'ARMAR MENÚ'},
@@ -29,10 +29,11 @@ export default function Work(){
         
            <h1 className="workt">ESCRIBENOS</h1>
        </div>
+       <div className="armarbg">
          <NavBar links={links} />
     
-             <ComplexGrid/>
-             
+             <ActionsInExpansionPanelSummary/>;
+             </div>
         
 
     </>

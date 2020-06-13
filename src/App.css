@@ -119,9 +119,6 @@ header h2{
 img{
    width: 1920px;
    height: 300px;
-
-
-
 }
 
 .h{
@@ -493,10 +490,6 @@ display: inline;
 .link a:hover{
      color:black;
 }
-
-
-
-
 .boton {
     background-color:  #F26D6D;
     border-color: #F26D6D;
@@ -546,4 +539,7 @@ display: inline;
 
 .inputError{
    box-shadow: 0px 0px 6px 2px rgb(255,0,0);
+}
+h3{
+   color:white;
 }

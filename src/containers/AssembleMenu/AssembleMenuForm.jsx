@@ -1,29 +1,22 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Checkbox from '@material-ui/core/Checkbox';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import FormControl from '@material-ui/core/FormControl';
 import ListAltIcon from '@material-ui/icons/ListAlt';
-const useStyles = makeStyles({
-  root: {
-    width: '70%',
-   
-  },
-});
+import {AssembleStyle} from './AssembleMenuStyle';
+
 
 export default function ActionsInExpansionPanelSummary() {
-  const classes = useStyles();
+  const assemble = AssembleStyle();
 
   return (
-    <div className={classes.root}>
+    <div className={assemble.root}>
       <div className="armarmenu">
      <h3>ENSALADA</h3>
       <ExpansionPanel className="expanel">
@@ -43,7 +36,7 @@ export default function ActionsInExpansionPanelSummary() {
         </ExpansionPanelSummary>
         <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -72,7 +65,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -103,7 +96,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -135,7 +128,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -164,7 +157,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -193,7 +186,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -225,7 +218,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -254,7 +247,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -283,7 +276,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -315,7 +308,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -344,7 +337,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
@@ -373,7 +366,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <div className="inputicon">
-        <FormControl className={classes.margin}>
+        <FormControl className={assemble.margin}>
         <InputLabel htmlFor="input-with-icon-adornment">Cantidad</InputLabel>
         <Input
           id="input-with-icon-adornment"
