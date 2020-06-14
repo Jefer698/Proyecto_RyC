@@ -13,8 +13,12 @@ import SelectionMenu from './pages/SelectionMenu';
 import Corporate from './pages/Corporate';
 import MenuSemanal from './pages/MenuSemanal';
 import EnvioForm from './pages/Envio';
+import MenuMaintainer from './pages/MenuMaintainer';
+import PedidosMaintainer from './pages/PedidosMaintainer';
+
+
 import './App.css';
-import { 
+import {
   BrowserRouter as Router,
   Switch,
   Route
@@ -24,55 +28,61 @@ function App() {
   return (
     <Router>
       <Switch>
-      <Route exact path="/">
-            <Login/>
-      </Route>
-      <Route path="/login">
-            <Login/>
-      </Route>
-      <Route path="/register">
-        <Register/>
-      </Route>
-      <Route path="/recovery">
-        <Recovery/>
-      </Route>
-      <Route path="/home">
-        <Home/>
-      </Route>
-      <Route path="/aboutus">
-        <AboutUs/>
-      </Route>
-      <Route path="/assemble">
-        <AssembleMenu/>
-      </Route>
-      <Route path="/branch">
-        <BranchOffice/>
-      </Route>
-      <Route path="/contact">
-        <Contact/>
-      </Route>
-      <Route path="/schedule">
-        <Schedule/>
-      </Route>
-      <Route path="/work">
-        <Work/>
-      </Route>
-      <Route path="/selection">
-        <SelectionMenu/>
-      </Route>
-      <Route path="/corporate">
-        <Corporate/>
-      </Route>
-      <Route path="/menusemanal">
-        <MenuSemanal/>
-      </Route>
-    
-      <Route path="/envio">
-        <EnvioForm/>
-      </Route>
+        <Route exact path="/">
+          <Login />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/register">
+          <Register />
+        </Route>
+        <Route path="/recovery">
+          <Recovery />
+        </Route>
+        <Route path="/home">
+          <Home />
+        </Route>
+        <Route path="/aboutus">
+          <AboutUs />
+        </Route>
+        <Route path="/assemble">
+          <AssembleMenu />
+        </Route>
+        <Route path="/branch">
+          <BranchOffice />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/schedule">
+          <Schedule />
+        </Route>
+        <Route path="/work">
+          <Work />
+        </Route>
+        <Route path="/selection">
+          <SelectionMenu />
+        </Route>
+        <Route path="/corporate">
+          <Corporate />
+        </Route>
+        <Route path="/menusemanal">
+          <MenuSemanal />
+        </Route>
+
+        <Route path="/envio">
+          <EnvioForm />
+        </Route>
+        <Route path="/menu-maintainer">
+          <MenuMaintainer />
+        </Route>
+        <Route path="/pedidos-maintainer">
+          <PedidosMaintainer />
+        </Route>
       </Switch>
-      </Router>
-  ) ;
+    </Router>
+  );
 }
 
 export default App;
