@@ -16,7 +16,10 @@ const useStyles = makeStyles((theme) => ({
     width: '100%',
     display: 'flex',
     justifyContent: 'flex-end'
-  }
+  },
+  pinkColor: {
+    color: '#F26D6D'
+  },
 }));
 
 export default useStyles;

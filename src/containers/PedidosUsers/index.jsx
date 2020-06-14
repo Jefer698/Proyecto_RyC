@@ -159,7 +159,7 @@ const PedidosUsers = (props) => {
         onClose={handleCloseTerminate}
         data={detail}
       />
-      <div className={classes.containerEnd}> <Button className={classes.pinkColor}>SIGUIENTE PAGINA</Button></div>
+      {/* <div className={classes.containerEnd}> <Button className={classes.pinkColor}>SIGUIENTE PAGINA</Button></div> */}
     </div>
   );
 }
