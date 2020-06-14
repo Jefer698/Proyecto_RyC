@@ -7,7 +7,8 @@ import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import useStyles from './styles';
 import ItemBox from '../../components/ItemBox';
-import DetailModal from './Modal';
+import DetailModal from './DetailModal';
+import TerminateModal from './TerminateModal';
 
 const TabPanel = (props) => {
   const { children, value, index, ...other } = props;
@@ -58,6 +59,7 @@ const PedidosUsers = (props) => {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
   const [open, setOpen] = React.useState(false);
+  const [openTerminate, setOpenTerminate] = React.useState(false);
   const [detail, setDetail] = React.useState([]);
 
   const actionsCurrently = [
@@ -82,13 +84,18 @@ const PedidosUsers = (props) => {
     setOpen(true);
   };
 
-  const onClickTerminate = (data) => {
-    alert(`Terminado ${data.menu}`)
+  const onClickTerminate = (value) => {
+    setDetail(value)
+    setOpenTerminate(!openTerminate)
   };
 
   const handleClose = () => {
     setOpen(false);
   };
+
+  const handleCloseTerminate = () => {
+    setOpenTerminate(false);
+  }
 
   return (
     <div className={classes.root}>
@@ -136,10 +143,20 @@ const PedidosUsers = (props) => {
         classes={{
           paper: classes.paper,
         }}
-        id="ringtone-menu"
+        id="detail-modal"
         keepMounted
         open={open}
         onClose={handleClose}
+        data={detail}
+      />
+      <TerminateModal
+        classes={{
+          paper: classes.paper,
+        }}
+        id="terminate-modal"
+        keepMounted
+        open={openTerminate}
+        onClose={handleCloseTerminate}
         data={detail}
       />
       <div className={classes.containerEnd}> <Button className={classes.pinkColor}>SIGUIENTE PAGINA</Button></div>

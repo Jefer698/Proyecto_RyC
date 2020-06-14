@@ -15,6 +15,11 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     borderRadius: '100px'
   },
+  buttonRed: {
+    background: '#FF0000',
+    color: 'white',
+    borderRadius: '100px'
+  },
   containerEnd: {
     width: '100%',
     display: 'flex',

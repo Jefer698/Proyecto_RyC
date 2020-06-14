@@ -10,8 +10,7 @@ import useStyles from './styles';
 
 const DetailModal = (props) => {
   const classes = useStyles();
-  const { onClose, data, value: valueProp, open, ...other } = props;
-  const [value, setValue] = React.useState(valueProp);
+  const { onClose, data, open, ...other } = props;
   const radioGroupRef = React.useRef(null);
 
   const handleEntering = () => {
@@ -21,7 +20,7 @@ const DetailModal = (props) => {
   };
 
   const handleOk = () => {
-    onClose(value);
+    onClose();
   };
 
   return (
@@ -37,7 +36,7 @@ const DetailModal = (props) => {
       <DialogTitle id='detail-dialog-title' className={classes.pinkColor}>Detalle de pedido</DialogTitle>
       <DialogContent dividers>
         {
-          data && <div>
+          data && <>
             <p>Nombre: {data.name}</p>
             <p>RUT: {data.rut}</p>
             <p>Telefono: {data.phone}</p>
@@ -45,7 +44,7 @@ const DetailModal = (props) => {
             <p>Dirección: {data.address}</p>
             <p>Método de Pago: {data.paymentType}</p>
             <p>Menú: {data.menu}</p>
-          </div>
+          </>
         }
       </DialogContent>
       <DialogActions>
@@ -61,8 +60,7 @@ const DetailModal = (props) => {
 
 DetailModal.propTypes = {
   onClose: PropTypes.func.isRequired,
-  open: PropTypes.bool.isRequired,
-  value: PropTypes.string.isRequired,
+  open: PropTypes.bool.isRequired
 };
 
 export default DetailModal;
