@@ -11,6 +11,7 @@ import Schedule from './pages/Schedule';
 import Work from './pages/Work';
 import SelectionMenu from './pages/SelectionMenu';
 import Corporate from './pages/Corporate';
+import EnvioForm from './pages/Envio';
 import './App.css';
 import { 
   BrowserRouter as Router,
@@ -61,7 +62,9 @@ function App() {
       <Route path="/corporate">
         <Corporate/>
       </Route>
-    
+      <Route path="/envio">
+        <EnvioForm/>
+      </Route>
       </Switch>
       </Router>
   ) ;

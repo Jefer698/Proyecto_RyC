@@ -31,7 +31,6 @@ export default function Work(){
        </div>
          <NavBar links={links} />
     
-             <ComplexGrid/>
              
         
 
