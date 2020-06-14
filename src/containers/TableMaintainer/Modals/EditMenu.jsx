@@ -40,40 +40,39 @@ const EditMenu = (props) => {
       {...other}
     >
       <DialogTitle id='detail-dialog-title' className={classes.pinkColor}>Menú</DialogTitle>
-      <DialogContent dividers>
+      <DialogContent className={classes.contentModal} dividers>
         {
           data && <>
             <TextField
-              label="Nombre Menú"
+              label='Nombre Menú'
               value={data.menu}
-              name="menu"
+              name='menu'
               onChange={onChangeValue}
             />
             <TextField
-              label="Detalle"
+              label='Detalle'
               value={data.detail}
-              name="detail"
+              name='detail'
               onChange={onChangeValue}
             />
             <TextField
-              label="Ensalada"
+              label='Ensalada'
               value={data.salad}
-              name="salad"
+              name='salad'
               onChange={onChangeValue}
             />
             <TextField
-              label="Postre"
+              label='Postre'
               value={data.dessert}
-              name="dessert"
+              name='dessert'
               onChange={onChangeValue}
             />
             <TextField
-              label="Bebida"
+              label='Bebida'
               value={data.drink}
-              name="drink"
+              name='drink'
               onChange={onChangeValue}
             />
-
           </>
         }
       </DialogContent>
@@ -82,7 +81,9 @@ const EditMenu = (props) => {
           onClick={handleOk}
           variant='contained'
           color='secondary'
-          className={classes.buttonAdd}>ACEPTAR</Button>
+          className={classes.buttonAdd}>
+            ACEPTAR
+        </Button>
       </DialogActions>
     </Dialog>
   );

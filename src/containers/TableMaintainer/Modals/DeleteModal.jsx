@@ -6,12 +6,11 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogActions from '@material-ui/core/DialogActions';
 import Dialog from '@material-ui/core/Dialog';
 import useStyles from '../styles';
-import TextField from '@material-ui/core/TextField';
 
 
-const EditPrice = (props) => {
+const DeleteModal = (props) => {
   const classes = useStyles();
-  const { onClose, data, onChangeInput, open, ...other } = props;
+  const { onClose, data, open, ...other } = props;
   const radioGroupRef = React.useRef(null);
 
   const handleEntering = () => {
@@ -20,13 +19,12 @@ const EditPrice = (props) => {
     }
   };
 
-  const onChangeValue = (event) => {
-    onChangeInput(event);
-  }
-
   const handleOk = () => {
     onClose();
   };
+  const handleCancel = () => {
+    onClose();
+  }
 
   return (
     <Dialog
@@ -38,21 +36,20 @@ const EditPrice = (props) => {
       open={open}
       {...other}
     >
-      <DialogTitle id='detail-dialog-title' className={classes.pinkColor}>Precio Único Menú</DialogTitle>
+      <DialogTitle id='detail-dialog-title' className={classes.pinkColor}>¿Está seguro que desea eliminar el Menú?</DialogTitle>
       <DialogContent dividers>
         {
-          data &&
-            <TextField
-              id='price'
-              label='Precio'
-              value={data}
-              type='number'
-              name='precio'
-              onChange={onChangeValue}
-            />
+          data && <p>Menú: {data.menu}</p>
         }
       </DialogContent>
       <DialogActions>
+        <Button
+          onClick={handleCancel}
+          variant='contained'
+          color='secondary'
+          className={classes.buttonRed}>
+            CANCELAR
+        </Button>
         <Button
           onClick={handleOk}
           variant='contained'
@@ -65,9 +62,9 @@ const EditPrice = (props) => {
   );
 }
 
-EditPrice.propTypes = {
+DeleteModal.propTypes = {
   onClose: PropTypes.func.isRequired,
   open: PropTypes.bool.isRequired
 };
 
-export default EditPrice;
+export default DeleteModal;

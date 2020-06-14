@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 import useStyle from './styles';
 import EditPriceModal from './Modals/EditPrice';
 import EditMenuModal from './Modals/EditMenu';
-
+import DeleteModal from './Modals/DeleteModal';
 
 const TableMenu = (props) => {
   const { dataMenu, initialItemMenu, dataPriceUnique } = props;
@@ -12,6 +12,8 @@ const TableMenu = (props) => {
   const [dataPrice, setDataPrice] = React.useState(0);
   const [menuItem, setMenuItem] = React.useState(initialItemMenu);
   const [openMenu, setOpenMenu] = React.useState(false);
+  const [openDeleteModal, setOpenDeleteModal] = React.useState(false);
+
   const classes = useStyle();
 
   const actions = [
@@ -22,7 +24,8 @@ const TableMenu = (props) => {
     },
     {
       name: 'ELIMINAR',
-      color: '#FF0000'
+      color: '#FF0000',
+      onClick: (data) => handleOpenDeleteModal(data)
     }
   ]
 
@@ -39,7 +42,7 @@ const TableMenu = (props) => {
     setOpenEditPrice(!openEditPrice)
   }
 
-  const handleCloseEditPrice = (value) => {
+  const handleCloseEditPrice = () => {
     setOpenEditPrice(false)
   }
 
@@ -53,7 +56,7 @@ const TableMenu = (props) => {
     setOpenMenu(!openMenu)
   }
 
-  const handleCloseEditMenu = (value) => {
+  const handleCloseEditMenu = () => {
     setOpenMenu(false)
   }
   const onChangeMenuInput = (event) => {
@@ -67,6 +70,15 @@ const TableMenu = (props) => {
     setOpenMenu(!openMenu)
   }
 
+  const handleOpenDeleteModal = (value) => {
+    setMenuItem(value)
+    setOpenDeleteModal(!openDeleteModal)
+  }
+
+  const handleCloseDeleteModal = () => {
+    setOpenDeleteModal(false)
+  }
+
   return (
     <>
       <div className={classes.containerEnd}>
@@ -75,7 +87,8 @@ const TableMenu = (props) => {
           color='secondary'
           onClick={onClickEditMenuNew}
           className={classes.buttonAdd}
-        >AGREGAR</Button>
+        > AGREGAR
+        </Button>
       </div>
       <div className={classes.containerBox}>
         <ItemBox
@@ -118,6 +131,16 @@ const TableMenu = (props) => {
         open={openMenu}
         onChangeInput={(event) => onChangeMenuInput(event)}
         onClose={handleCloseEditMenu}
+        data={menuItem}
+      />
+      <DeleteModal
+        classes={{
+          paper: classes.paper,
+        }}
+        id='delete-modal'
+        keepMounted
+        open={openDeleteModal}
+        onClose={handleCloseDeleteModal}
         data={menuItem}
       />
     </>

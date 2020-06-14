@@ -12,6 +12,11 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     borderRadius: '100px'
   },
+  buttonRed: {
+    background: '#FF0000',
+    color: 'white',
+    borderRadius: '100px'
+  },
   containerEnd: {
     width: '100%',
     display: 'flex',
@@ -20,6 +25,9 @@ const useStyles = makeStyles((theme) => ({
   pinkColor: {
     color: '#F26D6D'
   },
+  contentModal: {
+    textAlign: 'center'
+  }
 }));
 
 export default useStyles;
