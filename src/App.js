@@ -11,6 +11,10 @@ import Schedule from './pages/Schedule';
 import Work from './pages/Work';
 import SelectionMenu from './pages/SelectionMenu';
 import Corporate from './pages/Corporate';
+import MenuMaintainer from './pages/MenuMaintainer';
+import PedidosMaintainer from './pages/PedidosMaintainer';
+
+
 import './App.css';
 import { 
   BrowserRouter as Router,
@@ -61,7 +65,12 @@ function App() {
       <Route path="/corporate">
         <Corporate/>
       </Route>
-    
+      <Route path="/menu-maintainer">
+        <MenuMaintainer/>
+      </Route>
+      <Route path="/pedidos-maintainer">
+        <PedidosMaintainer/>
+      </Route>
       </Switch>
       </Router>
   ) ;
