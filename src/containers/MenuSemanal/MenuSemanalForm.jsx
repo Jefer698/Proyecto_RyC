@@ -9,6 +9,9 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import {SelectionOption} from '../SelectionMenu/SelectionMenuStyle';
+import {menuStyles} from './ButtonStyle';
+import Button from '@material-ui/core/Button';
+import PlaylistAddCheckIcon from '@material-ui/icons/PlaylistAddCheck';
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -44,6 +47,7 @@ function a11yProps(index) {
 
 export default function VerticalTabs() {
   const selectionop = SelectionOption();
+  const menu = menuStyles();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -51,6 +55,7 @@ export default function VerticalTabs() {
   };
 
   return (
+    <>
       <div className="tab">
     <div className={selectionop.root}>
       <Tabs
@@ -187,8 +192,30 @@ export default function VerticalTabs() {
         <h3>Imagen</h3>  
       </TabPanel>
       </div>
+      
     </div>
+    <Button
+       variant="contained"
+       color="primary"
+       className={menu.button}
+       startIcon={<PlaylistAddCheckIcon />}
+     >
+       Seleccionar Menú
+     </Button>
+     <Button
+       variant="contained"
+       color="secondary"
+       className={menu.button}
+       
+     >
+       Armar Menú
+       <PlaylistAddCheckIcon className="icon" />
+     </Button>
     </div>
+     
+     
+   
+   </>
   );
 }
 

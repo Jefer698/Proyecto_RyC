@@ -543,3 +543,11 @@ display: inline;
 h3{
    color:white;
 }
+.armarimg{
+   width:300px;
+   height: 300px;
+   margin-left: 250px;
+}
+.icon{
+   margin-left: 15px;
+}

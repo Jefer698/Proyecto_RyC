@@ -12,7 +12,9 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 import Input from '@material-ui/core/Input';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import ListAltIcon from '@material-ui/icons/ListAlt';
-import {SelectionOption} from './SelectionMenuStyle';
+import {SelectionOption,menuStyles} from './SelectionMenuStyle';
+import Button from '@material-ui/core/Button';
+import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -51,7 +53,7 @@ function a11yProps(index) {
 
 export default function VerticalTabs() {
   const selectionop = SelectionOption();
-
+  const menu = menuStyles();
   const [value, setValue] = React.useState(0);
   const [age, setAge] = React.useState('');
   const handleChange = (event, newValue) => {
@@ -60,6 +62,7 @@ export default function VerticalTabs() {
   };
  
   return (
+    <>
       <div className="tab">
     <div className={selectionop.root}>
       <Tabs
@@ -233,6 +236,17 @@ export default function VerticalTabs() {
       </div>
     </div>
     </div>
+       <div >
+       <Button
+         variant="contained"
+         color="secondary"
+         className={menu.button}
+         startIcon={<NavigateNextIcon/>}
+       >
+         Siguiente
+       </Button>
+     </div>
+     </>
   );
 }
 

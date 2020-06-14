@@ -43,6 +43,7 @@ export const SelectionTb = withStyles((theme) => ({
       backgroundColor: theme.palette.background.paper,
       display: 'flex',
       height: 224,
+    
   
     
     },
@@ -52,7 +53,7 @@ export const SelectionTb = withStyles((theme) => ({
     paper: {
       padding: theme.spacing(2),
       margin: 'auto',
-      height:370,
+      height:500,
       width:750,
     },
     margin: {
@@ -71,3 +72,11 @@ export const SelectionTb = withStyles((theme) => ({
     },
     
   }));
+  export const menuStyles = makeStyles((theme) => ({
+    button: {
+      margin: theme.spacing(1),
+      marginLeft:630,
+      marginTop:250
+    },
+  }));
+  
