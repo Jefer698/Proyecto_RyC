@@ -12,6 +12,7 @@ import Work from './pages/Work';
 import SelectionMenu from './pages/SelectionMenu';
 import Corporate from './pages/Corporate';
 import MenuSemanal from './pages/MenuSemanal';
+import EnvioForm from './pages/Envio';
 import './App.css';
 import { 
   BrowserRouter as Router,
@@ -66,6 +67,9 @@ function App() {
         <MenuSemanal/>
       </Route>
     
+      <Route path="/envio">
+        <EnvioForm/>
+      </Route>
       </Switch>
       </Router>
   ) ;

@@ -12,7 +12,11 @@ position: -webkit-sticky;
 
 }
 
+h1{
 
+   color:#666363;
+  
+}
 nav ul{
         list-style:none;
 }
@@ -453,6 +457,7 @@ margin-right: -200px;
 
  label{
    font-size:20px;
+
    
 }
 textarea{
@@ -550,4 +555,38 @@ h3{
 }
 .icon{
    margin-left: 15px;
+}
+.totalenvio{
+   margin-left: 520px;
+   margin-top: 70px;
+}
+.inenvio{
+
+background-color: none;
+box-shadow: 1px 4px 4px 4px teal;
+margin-bottom: 10px;
+margin-top: 40px;
+height:380px;
+   width:650px;
+   border-radius: 30px;
+   margin-right: 200px;
+}
+.tableenvio{
+  margin-left: 40px;
+}
+
+.inla{
+   width: 500px;
+   margin-left: 80px;
+  
+}
+.inla2{
+
+  border-radius: 20px; 
+
+
+}
+.inla4{
+   margin-left: 50px;
+   margin-top: 3px;
 }
