@@ -195,6 +195,8 @@ export default function VerticalTabs() {
       
     </div>
     <Button
+    role="link"
+    href="selection"
        variant="contained"
        color="primary"
        className={menu.button}
@@ -203,6 +205,8 @@ export default function VerticalTabs() {
        Seleccionar Menú
      </Button>
      <Button
+     role="link"
+     href="assemble"
        variant="contained"
        color="secondary"
        className={menu.button}

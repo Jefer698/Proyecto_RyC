@@ -82,6 +82,7 @@ export default function VerticalTabs() {
 
       </Tabs>
       <div className="tab1">
+        
       <TabPanel  value={value} index={0}>
       <Grid  container spacing={3}>
         <Grid  item xs={6}>
@@ -201,6 +202,7 @@ export default function VerticalTabs() {
       </FormControl>
       </div>
                 </Typography>
+               
               
               </Grid>
               
@@ -233,19 +235,25 @@ export default function VerticalTabs() {
         <h2>DETALLE</h2>
         <h3>Imagen</h3>  
       </TabPanel>
+      
       </div>
+      
     </div>
+ 
     </div>
-       <div >
-       <Button
-         variant="contained"
-         color="secondary"
-         className={menu.button}
-         startIcon={<NavigateNextIcon/>}
-       >
-         Siguiente
-       </Button>
+    <div>
+                <Button
+    role="link"
+    href="envio"
+       variant="contained"
+       color="secondary"
+       className={menu.button}
+       startIcon={<NavigateNextIcon />}
+     >
+       SIGUIENTE
+     </Button>
      </div>
+      
      </>
   );
 }

@@ -16,10 +16,9 @@ export const AssembleStyle = (makeStyles)({
  export const menuStyles = makeStyles((theme) => ({
     button: {
       margin: theme.spacing(1),
-      marginLeft:550,
+      marginLeft:530,
       marginTop:60,
-      maxWidth: '100%',
-      display:'flex'
+ 
     },
   }));
   export const Selectionimg = makeStyles((theme) => ({

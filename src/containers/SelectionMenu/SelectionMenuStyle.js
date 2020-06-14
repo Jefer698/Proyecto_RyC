@@ -43,7 +43,7 @@ export const SelectionTb = withStyles((theme) => ({
       backgroundColor: theme.palette.background.paper,
       display: 'flex',
       height: 224,
-    
+      width:'auto'
   
     
     },
@@ -53,7 +53,8 @@ export const SelectionTb = withStyles((theme) => ({
     paper: {
       padding: theme.spacing(2),
       margin: 'auto',
-      height:500,
+      height:'auto',
+      
       width:750,
     },
     margin: {
