@@ -13,10 +13,6 @@ const links=[
     {href: 'contact', title: 'CONTACTO'},
     {href: 'schedule', title: 'HORARIOS'},
     {href: 'login', title: 'CUENTA'}
-    
-    
-
-
 ];
 
 export default function Work(){
