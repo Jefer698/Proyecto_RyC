@@ -72,8 +72,7 @@ export default class NavBarHome extends React.Component {
   render() {
     const {
       location,
-      dire,
-      boton
+      dire
     } = this.state.homeData;
     const { errors } = this.state;
 

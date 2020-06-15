@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function InputLine(props) {
+const InputLine = (props) => {
   const { label,
     type,
     placeholder,
@@ -42,7 +42,6 @@ export default function InputLine(props) {
       <LineField label={label}>
         <FormControl className={classes.formControl}>
           <TextField
-            className={classes.backgroundInput}
             label={label}
             variant='outlined'
             type={type}
@@ -72,3 +71,5 @@ export default function InputLine(props) {
     </div>
   );
 }
+
+export default InputLine;
