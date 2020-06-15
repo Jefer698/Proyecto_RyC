@@ -19,7 +19,7 @@ import PedidosMaintainer from './pages/PedidosMaintainer';
 export const routes = [
   {
     path: '/',
-    component: Login
+    component: Home
   },
   {
     path: '/login',

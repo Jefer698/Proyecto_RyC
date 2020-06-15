@@ -1,6 +1,7 @@
 import React from 'react';
 import TableMainteiner from '../containers/TableMaintainer'
-import {dataMenu, initialItemMenu, dataPriceUnique} from '../data/MenuMaintainer'
+import { initialItemMenu, dataPriceUnique } from '../data/initialData'
+import { dataMenu } from '../data/dataMenu'
 
 const MenuMaintainer = () => {
 
