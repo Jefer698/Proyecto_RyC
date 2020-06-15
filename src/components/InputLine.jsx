@@ -1,71 +1,74 @@
 import React from 'react';
 import LineField from './LineField';
-export default function InputLine(props){
-    const {label,
-        type,
-        placeholder,
-        required,
-        minLength,
-        maxLength,
-        min,
-        max,
-        step,
-        list,
-        onChange,
-        name,
-        error,
-        value,
-        onClick,
-        title
-        }=props;
-    /*
-const label = props label;
-const type = props type;
-const placeholder= props placeholder;
-const required= props required;
+import TextField from '@material-ui/core/TextField';
+import { makeStyles } from '@material-ui/core/styles';
+
+import FormControl from '@material-ui/core/FormControl';
+const useStyles = makeStyles((theme) => ({
+  backgroundInput: {
+    backgroundColor: 'red',
+  },
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 300,
+    backgroundColor: 'whitesmoke',
+    borderRadius: '5px!important'
+  },
+}));
+
+export default function InputLine(props) {
+  const { label,
+    type,
+    placeholder,
+    required,
+    minLength,
+    maxLength,
+    min,
+    max,
+    step,
+    list,
+    onChange,
+    name,
+    error,
+    value,
+    onClick,
+    title
+  } = props;
+  const classes = useStyles();
 
 
-if(error === true){
-    className='InputError';}
-    else{
-        className='';
-    }
-
-    className=Error===true?'InputError':'';
-    */
-    return(
-        <>
-        <LineField label={label}>
-        
-        <input type={type} 
-        placeholder={placeholder} 
-        required={required}
-         minLength={minLength} 
-         maxLength={maxLength}
-         min={min}
-         max={max} 
-         onClick={onClick}
-         step={step}
-         onChange={(event) => onChange(name,event)}
-         className={error ? 'inputError':undefined}
-         value={value}
-         title={title}
-         list={list && list.id}/>
-         {list &&
-            <datalist id={list.id}>
-                {list.options.map((option,key)=>
-                        <option key={key}>{option}</option>
-                    )}
-            
-               
-            </datalist>
-
-         }
-         </LineField>
-         
-              
-               
-
-</>
-    );
+  return (
+    <div>
+      <LineField label={label}>
+        <FormControl className={classes.formControl}>
+          <TextField
+            className={classes.backgroundInput}
+            label={label}
+            variant='outlined'
+            type={type}
+            placeholder={placeholder}
+            required={required}
+            minLength={minLength}
+            maxLength={maxLength}
+            min={min}
+            max={max}
+            onClick={onClick}
+            step={step}
+            onChange={(event) => onChange(name, event)}
+            className={error ? 'inputError' : undefined}
+            value={value}
+            title={title}
+            list={list && list.id}
+          />
+        </FormControl>
+        {list &&
+          <datalist id={list.id}>
+            {list.options.map((option, key) =>
+              <option key={key}>{option}</option>
+            )}
+          </datalist>
+        }
+      </LineField>
+    </div>
+  );
 }

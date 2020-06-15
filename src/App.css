@@ -1,592 +1,526 @@
 @import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
-*{
-   font-family: verdana,serif,sans-serif;
-
+* {
+   font-family: verdana, serif, sans-serif;
 }
 
-nav{
+nav {
    text-align: center;
-overflow:hidden;
-background-color: black;
-position: -webkit-sticky;
-
+   overflow: hidden;
+   background-color: black;
+   position: -webkit-sticky;
 }
 
-h1{
-
-   color:#666363;
-  
+h1 {
+   color: #666363;
 }
-nav ul{
-        list-style:none;
+nav ul {
+   list-style: none;
 }
-    .tab{
-    margin-left: 100px;
-
- }
- .tab1{
+.tab {
+   margin-left: 100px;
+}
+.tab1 {
    margin-left: 60px;
-   width:1200px;
- 
+   width: 1200px;
 }
-.menu2{
+.menu2 {
    text-align: center;
 }
-.m2{
-      height: 120px;
-      width: 200px;
-   }
-   .titulo{
-      font-size: 30px;
-   }
-  .detail{
-     font-weight: bold;
-     text-decoration-line: underline;
-     font-size: 20px;
-     display: inline;
-  }
-  .parrafo{
-     font-style: italic;
-     display: inline;
-     margin-left: 6px;
-  }
-  .selectionicon{
-    
-     margin-left: 160px;
-     margin-top: 30px;
-     
-  }
-  .inputicon{
-     margin-left: 15px;
-     margin-bottom: 30px;
-     text-align: right;
-  }
-  .armarmenu{
-     margin-left: 200px;
-     margin-top: 40px;
-     color:white;
-     
-  }
-  .armarbg{
-     background-image: url("https://fondosmil.com/fondo/27737.jpg");
-     margin-top: -40px;
-  }
-  
-nav ul li{
-   display:inline;
- margin-right:20px;
-
+.m2 {
+   height: 120px;
+   width: 200px;
 }
-nav ul li a{
-    color:white;;
-    border:none;
-text-decoration: none;
-
-
+.titulo {
+   font-size: 30px;
 }
- 
-nav ul li a:hover{
-     color:grey;
-  
-
+.detail {
+   font-weight: bold;
+   text-decoration-line: underline;
+   font-size: 20px;
+   display: inline;
 }
-.workcentrar{
+.parrafo {
+   font-style: italic;
+   display: inline;
+   margin-left: 6px;
+}
+.selectionicon {
+   margin-left: 160px;
+   margin-top: 30px;
+}
+.inputicon {
+   margin-left: 15px;
+   margin-bottom: 30px;
+   text-align: right;
+}
+.armarmenu {
+   margin-left: 200px;
+   margin-top: 40px;
+   color: white;
+}
+.armarbg {
+   background-image: url("https://fondosmil.com/fondo/27737.jpg");
+   margin-top: -40px;
+}
+
+nav ul li {
+   display: inline;
+   margin-right: 20px;
+}
+nav ul li a {
+   color: white;
+   border: none;
+   text-decoration: none;
+}
+
+nav ul li a:hover {
+   color: grey;
+}
+.workcentrar {
    text-align: center;
-
 }
 
-
-.formulario{
-
-           background:none;
-           margin-right: auto;
-           margin-left: auto;
-           width:750px;
-           text-align: center;
-          border: none;
-           padding:10px;
-           outline: none;
-        background-color:white;
-        height: 600px;
-        margin-top: 30px;
+.formulario {
+   background: none;
+   margin-right: auto;
+   margin-left: auto;
+   width: 750px;
+   text-align: center;
+   border: none;
+   padding: 10px;
+   outline: none;
+   background-color: white;
+   height: 600px;
+   margin-top: 30px;
 }
 
-
-
-header h2{
-  background-color: #F26D6D;
-  color:white;
-  height: 50px;
-  padding-top: 15px;
+header h2 {
+   background-color: #f26d6d;
+   color: white;
+   height: 50px;
+   padding-top: 15px;
 }
- 
-img{
+
+img {
    width: 1920px;
    height: 300px;
 }
 
-.h{
-  background-image: url("https://thumbs.dreamstime.com/b/fondo-s%C3%B3lido-del-dril-de-algod%C3%B3n-azul-primer-textura-134441981.jpg");
+.h {
+   background-image: url("https://thumbs.dreamstime.com/b/fondo-s%C3%B3lido-del-dril-de-algod%C3%B3n-azul-primer-textura-134441981.jpg");
 }
 
-input{
+input {
+   display: block;
 
-  display: block;
-
-  width: 70%;
- margin-top: 10px;
-  padding: 6px 12px;
-  font-size: 13px;
-  line-height: 1.42857143;
-  color: #555;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  
-
-
+   width: 70%;
+   margin-top: 10px;
+   padding: 6px 12px;
+   font-size: 13px;
+   line-height: 1.42857143;
+   color: #555;
+   background-color: #fff;
+   border: 1px solid #ccc;
 }
-.lg{
+.lg {
    background-image: url("https://images6.alphacoders.com/100/1002209.jpg");
    height: 300px;
    padding-top: 1px;
 }
-.aboutg{
+.aboutg {
    background-image: url("https://lacocinadeserrats.com/wp-content/uploads/atun-claro-header-1920x300.jpg");
    height: 300px;
    padding-top: 1px;
-
 }
-.about{
-   color:white;
+.about {
+   color: white;
    background-color: hsla(200, 17%, 3%, 0.59);
    text-align: center;
-   width:900px;
+   width: 900px;
    margin-left: 320px;
    margin-top: 100px;
    font-size: 80px;
 }
-.armar{
+.armar {
    background-image: url("https://recetasdeisabel.com/wp-content/uploads/2017/09/C%C3%93MO-HACER-MANTEQUILLA-EN-DIEZ-MINUTOS-SLIDER-1920-X-590-1920x300.jpg");
    height: 300px;
    padding-top: 1px;
-
 }
-.armart{
-   color:white;
+.armart {
+   color: white;
    background-color: hsla(200, 17%, 3%, 0.59);
    text-align: center;
-   width:700px;
+   width: 700px;
    margin-left: 400px;
    margin-top: 100px;
    font-size: 80px;
 }
 
-.local{
+.local {
    background-image: url("https://acomer.pe/wp-content/uploads/2019/11/churros-fondo-1920x300.jpg");
    height: 300px;
    padding-top: 1px;
-
 }
-.localt{
-   color:white;
+.localt {
+   color: white;
    background-color: hsla(200, 17%, 3%, 0.59);
    text-align: center;
-   width:700px;
+   width: 700px;
    margin-left: 400px;
    margin-top: 100px;
    font-size: 80px;
 }
 
-.contacto{
+.contacto {
    background-image: url("https://umcoecuador.com/recetas/wp-content/uploads/2016/06/tips-1920x300.jpg");
    height: 300px;
    padding-top: 1px;
-
 }
-.contactot{
-   color:white;
+.contactot {
+   color: white;
    background-color: hsla(200, 17%, 3%, 0.59);
    text-align: center;
-   width:600px;
+   width: 600px;
    margin-left: 470px;
    margin-top: 100px;
    font-size: 80px;
 }
 
-.horario{
+.horario {
    background-image: url("https://recetasdeisabel.com/wp-content/uploads/2016/09/FLAN-DE-QUESITOS-SIN-HORNO-NI-HUEVOS-SLIDER-1920-X-590-1920x300.jpg");
    height: 300px;
    padding-top: 1px;
-
 }
-.horariot{
-   color:white;
+.horariot {
+   color: white;
    background-color: hsla(200, 17%, 3%, 0.59);
    text-align: center;
-   width:600px;
+   width: 600px;
    margin-left: 470px;
    margin-top: 100px;
    font-size: 80px;
 }
 
-.work{
+.work {
    background-image: url("https://www.canalrcn.com/nuestra-cocina/wp-content/uploads/2019/12/BELLA-CIAO-sin-texto-1920x300.jpg");
    height: 300px;
    padding-top: 1px;
-
 }
-.workt{
-   color:white;
+.workt {
+   color: white;
    background-color: hsla(200, 17%, 3%, 0.59);
    text-align: center;
-   width:600px;
+   width: 600px;
    margin-left: 470px;
    margin-top: 100px;
    font-size: 80px;
 }
 
-.corp{
+.corp {
    background-image: url("https://cocinaypunto.com/wp-content/uploads/2016/07/Slider-1920x300.jpg");
    height: 300px;
    padding-top: 1px;
-
 }
-.corpt{
-   color:white;
+.corpt {
+   color: white;
    background-color: hsla(200, 17%, 3%, 0.59);
    text-align: center;
-   width:800px;
+   width: 800px;
    margin-left: 400px;
    margin-top: 100px;
    font-size: 80px;
 }
-.bg{
+.bg {
    background-image: url("https://fondosmil.com/fondo/7687.png");
    height: 700px;
    padding-top: 40px;
 }
-.m1{
-   width:100px;
+.m1 {
+   width: 100px;
    height: 100px;
 }
 
-
- 
-.cuenta{
-   color:white;
+.cuenta {
+   color: white;
    background-color: hsla(200, 17%, 3%, 0.59);
    text-align: center;
-   width:450px;
+   width: 450px;
    margin-left: 535px;
    margin-top: 100px;
    font-size: 80px;
-  
-   
 }
- 
-.fobg{
+
+.fobg {
    background-image: url("https://images5.alphacoders.com/456/thumb-1920-456536.jpg");
    height: 100px;
-  padding-top: 1px;
+   padding-top: 1px;
    padding-bottom: 15px;
 }
-.navhome{
-
- background-color: black;  
- overflow: hidden;
- height: 60px;
+.navhome {
+   background-color: black;
+   overflow: hidden;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
 }
-select{
-   
-   display:inline-block;
-   width:300px;
+select {
+   display: inline-block;
+   width: 300px;
    font-size: 20px;
-  height: 33px;
-  margin-top: 14px;
-  margin-left: 400px;
+   height: 33px;
+   margin-top: 14px;
+   margin-left: 400px;
 }
-.a2{
-  
+.a2 {
    float: left;
-   width: 350PX; 
+   width: 350px;
    margin-top: 4.5px;
 }
 
-.buscar{
+.buscar {
    float: left;
    overflow: hidden;
-   border-radius: 40PX;
+   border-radius: 40px;
    margin-top: 10px;
    height: 40px;
    width: 120px;
-   background-color: #A60A6F;
-   COLOR:WHITE;
+   background-color: #a60a6f;
+   color: WHITE;
    border: 1px solid #ccc;
-   border-color: #A60A6F;
+   border-color: #a60a6f;
 }
-.rico{
+.rico {
    text-align: center;
    border-radius: 100px;
-   background-color:#D5CC9D;
-   width:550px;
+   background-color: #d5cc9d;
+   width: 60%;
    height: 100px;
-   margin-top: 30px;
- margin-left: 480px;
- padding-top: 25px;
- font-family: Montez;
- font-style: normal;
- font-weight: normal;
- font-size: 70px;
- text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
- }
-.lis1{
-
-   overflow: hidden;
-  margin-left: 18px;
-   margin-bottom: 40px;
-  
+   margin: 0 auto;
+   padding-top: 25px;
+   font-family: Montez;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 70px;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.lis2{
-  
+.lis1 {
    overflow: hidden;
    margin-left: 18px;
    margin-bottom: 40px;
-
 }
-.lis3{
-  
+.lis2 {
    overflow: hidden;
-  margin-left: 18px;
+   margin-left: 18px;
    margin-bottom: 40px;
- 
 }
-.text{
+.lis3 {
+   overflow: hidden;
+   margin-left: 18px;
+   margin-bottom: 40px;
+}
+.text {
    margin-left: 53px;
    text-decoration: none;
    color: white;
-  }
-  .text2{
+}
+.text2 {
    margin-left: 91px;
    text-decoration: none;
    color: white;
-  }
-  .text3{
+}
+.text3 {
    margin-left: 93px;
    text-decoration: none;
    color: white;
-  }
-  .text4{
+}
+.text4 {
    margin-left: 100px;
    text-decoration: none;
    color: white;
    margin-left: 74px;
-  
-  }
-  .text5{
+}
+.text5 {
    margin-left: 150px;
    text-decoration: none;
    color: white;
    margin-left: 103px;
-  
-  }
-  .text6{
-
+}
+.text6 {
    text-decoration: none;
    color: white;
    margin-left: 30px;
-  
-  }
-  .text7{
+}
+.text7 {
    margin-left: 95px;
    text-decoration: none;
    color: white;
-  }
-  .text8{
+}
+.text8 {
    margin-left: 75px;
    text-decoration: none;
    color: white;
-  }
-  .text9{
+}
+.text9 {
    margin-left: 85px;
    margin-right: 85px;
    text-decoration: none;
    color: white;
    margin-top: 20px;
-   
-  }
-  
-.opciones{
-   
- float: left;
- 
- height: 70px;
- width: 320px;
- border-radius: 40px;
- font-size: 18px;
- background-color: #F29D35;
- color: white;
- font-family: Montserrat;
-font-style: italic;
-font-weight: 900;
-line-height: 61px;
-margin-left: 230px;
-margin-right: -200px;
-
-
-}
-.o{
-   color:white;
-}
-.a1{
-   
-   float: left;   
- 
 }
 
-.home{
+.opciones {
+   float: left;
+
+   height: 70px;
+   width: 320px;
+   border-radius: 40px;
+   font-size: 18px;
+   background-color: #f29d35;
+   color: white;
+   font-family: Montserrat;
+   font-style: italic;
+   font-weight: 900;
+   line-height: 61px;
+   margin-left: 230px;
+   margin-right: -200px;
+}
+.o {
+   color: white;
+}
+.a1 {
+   float: left;
+}
+
+.home {
    border-radius: 40px;
    background-color: blue;
 }
 
-
 .formulario div {
    text-align: left;
-  margin:20px;
-    
+   margin: 20px;
 }
 
- label{
-   font-size:20px;
-
-   
+label {
+   font-size: 20px;
 }
-textarea{
-   display:block;
-   width:100%;
-  font-size:20px;
+textarea {
+   display: block;
+   width: 100%;
+   font-size: 20px;
 }
-.formulario .link{
+.formulario .link {
    text-align: center;
-  font-size:110%;
+   font-size: 110%;
    padding: 10px;
    justify-content: center;
 }
 
-.link2  a{
-  text-decoration: none;
-  color: #2FC5C4;
-text-align: right;
-padding-bottom: 40px;
-margin-left: 80%;
-
+.link2 a {
+   text-decoration: none;
+   color: #2fc5c4;
+   text-align: right;
+   padding-bottom: 40px;
+   margin-left: 80%;
 }
 
 .link2 a:hover {
-  color:black;
- 
+   color: black;
 }
-.link a{
-color:#22A6B3;
-text-decoration: none;
-display: inline;
-
+.link a {
+   color: #22a6b3;
+   text-decoration: none;
+   display: inline;
 }
 
-.link a:hover{
-     color:black;
+.link a:hover {
+   color: black;
 }
 .boton {
-    background-color:  #F26D6D;
-    border-color: #F26D6D;
-    font-size: 20px;
-    font-family: montserrat;
-    font-style: normal;
-    color:white;
-    border-radius: 20px;
-    width:200px; 
-   }
-  
-   .boton3 {
-    
-    background-color:  #F26D6D;
-    border-color: #F26D6D;
-    font-size: 18px;
-    font-family: montserrat;
-    font-style: normal;
-    color:white;
-    border-radius: 20px;
-    width:300px; 
-    padding-bottom: 10px;
-    padding-top: 10px;
-   }
-   
-   .boton2 {
-    background-color:#FA2525;
-    border-color:#FA2525;
-    font-size: 20px;
-    font-family: montserrat;
-    font-style: normal;
-    color:white;
-    border-radius: 100px;
-    width:300px; 
-
-    margin-top: 50px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-
-   }
-    
-    .boton:hover{
-
-    color:black;
+   background-color: #f26d6d;
+   border-color: #f26d6d;
+   font-size: 20px;
+   font-family: montserrat;
+   font-style: normal;
+   color: white;
+   border-radius: 20px;
+   width: 200px;
 }
 
-.inputError{
-   box-shadow: 0px 0px 6px 2px rgb(255,0,0);
+.boton3 {
+   background-color: #f26d6d;
+   border-color: #f26d6d;
+   font-size: 18px;
+   font-family: montserrat;
+   font-style: normal;
+   color: white;
+   border-radius: 20px;
+   width: 300px;
+   padding-bottom: 10px;
+   padding-top: 10px;
 }
-h3{
-   color:white;
+
+.boton2 {
+   background-color: #fa2525;
+   border-color: #fa2525;
+   font-size: 20px;
+   font-family: montserrat;
+   font-style: normal;
+   color: white;
+   border-radius: 100px;
+   width: 300px;
+
+   margin-top: 50px;
+   padding-top: 10px;
+   padding-bottom: 10px;
 }
-.armarimg{
-   width:300px;
+
+.boton:hover {
+   color: black;
+}
+
+.inputError {
+   box-shadow: 0px 0px 6px 2px rgb(255, 0, 0);
+}
+h3 {
+   color: white;
+}
+.armarimg {
+   width: 300px;
    height: 300px;
    margin-left: 250px;
 }
-.icon{
+.icon {
    margin-left: 15px;
 }
-.totalenvio{
+.totalenvio {
    margin-left: 520px;
    margin-top: 70px;
 }
-.inenvio{
-
-background-color: none;
-box-shadow: 1px 4px 4px 4px teal;
-margin-bottom: 10px;
-margin-top: 40px;
-height:380px;
-   width:650px;
+.inenvio {
+   background-color: none;
+   box-shadow: 1px 4px 4px 4px teal;
+   margin-bottom: 10px;
+   margin-top: 40px;
+   height: 380px;
+   width: 650px;
    border-radius: 30px;
    margin-right: 200px;
 }
-.tableenvio{
-  margin-left: 40px;
+.tableenvio {
+   margin-left: 40px;
 }
 
-.inla{
+.inla {
    width: 500px;
    margin-left: 80px;
-  
 }
-.inla2{
-
-  border-radius: 20px; 
-
-
+.inla2 {
+   border-radius: 20px;
 }
-.inla4{
+.inla4 {
    margin-left: 50px;
    margin-top: 3px;
 }
