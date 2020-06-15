@@ -1,7 +1,7 @@
 export const initialItemMenu = {
   id: '',
   menu: "",
-  detail: "",
+  details: "",
   salad: '',
   dessert: '',
   img: '',

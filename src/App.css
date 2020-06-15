@@ -485,7 +485,7 @@ textarea {
    box-shadow: 0px 0px 6px 2px rgb(255, 0, 0);
 }
 h3 {
-   color: white;
+   /* color: swhite; */
 }
 .armarimg {
    width: 300px;
@@ -523,4 +523,11 @@ h3 {
 .inla4 {
    margin-left: 50px;
    margin-top: 3px;
+}
+
+.form-style {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }

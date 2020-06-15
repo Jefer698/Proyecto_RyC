@@ -51,7 +51,7 @@ const EditMenu = (props) => {
             />
             <TextField
               label='Detalle'
-              value={data.detail}
+              value={data.details}
               name='detail'
               onChange={onChangeValue}
             />

@@ -1,46 +1,22 @@
 
 import React from 'react';
 import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
-import Content from '../components/Content';
+// import Footer from '../components/Footer';
+// import Content from '../components/Content';
 import CustomizedSelects from '../containers/SelectionMenu/SelectionMenuForm';
-import HeaderBg from '../components/HeaderBg';
-const links=[
-
-    {href: 'home', title: 'HOME'},
-{href: 'assemble', title: 'ARMAR MENÚ'},
-{href: 'branch', title: 'SUCURSALES'},
-{href: 'aboutus', title: 'QUIENES SOMOS'},
-{href: 'contact', title: 'CONTACTO'},
-{href: 'schedule', title: 'HORARIOS'},
-{href: 'login', title: 'CUENTA'}
-
-    
+// import HeaderBg from '../components/HeaderBg';
+import { navLinkUser } from '../data/NavLinks';
 
 
-];
+export default function AssembleMenu() {
 
-export default function AssembleMenu(){
-
-    return(
-
-<>
-
-<div className="armar">
-         
-         <h1 className="armart">ARMAR MENU</h1>
-     </div>
-         <NavBar links={links} />
-       
-             <CustomizedSelects/>
-           
-        
-
+  return (
+    <>
+      <div className='armar'>
+        <h1 className='armart'>SELECCIONAR MENÚ</h1>
+      </div>
+      <NavBar links={navLinkUser} />
+      <CustomizedSelects />
     </>
-
-
-
-
-
-    );
+  );
 }

@@ -47,7 +47,7 @@ export const SelectionOption = makeStyles((theme) => ({
   contentFood: {
     display: 'flex',
     justifyContent: 'space-evenly',
-    padding:'20px'
+    padding: '20px'
   },
   tabs: {
     // borderRight: `2px solid ${theme.palette.divider}`,

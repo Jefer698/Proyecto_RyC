@@ -8,7 +8,6 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import { SelectionOption } from '../SelectionMenu/SelectionMenuStyle';
-import { menuStyles } from './ButtonStyle';
 import Button from '@material-ui/core/Button';
 import PlaylistAddCheckIcon from '@material-ui/icons/PlaylistAddCheck';
 
@@ -48,7 +47,7 @@ const a11yProps = (index) => {
 
 const VerticalTabs = (props) => {
   const selectionop = SelectionOption();
-  const menu = menuStyles();
+  // const menu = menuStyles();
   const [value, setValue] = React.useState(0);
   const { dataMenu } = props
   const handleChange = (event, newValue) => {
@@ -128,28 +127,28 @@ const VerticalTabs = (props) => {
           </div>
 
         </div>
-        
+
       </div>
       <div className={selectionop.contentFood}>
-          <Button
-            role='link'
-            href='selection'
-            variant='contained'
-            color='primary'
-            startIcon={<PlaylistAddCheckIcon />}
-          >
-            Seleccionar Menú
+        <Button
+          role='link'
+          href='selection'
+          variant='contained'
+          color='primary'
+          startIcon={<PlaylistAddCheckIcon />}
+        >
+          Seleccionar Menú
           </Button>
-          <Button
-            role='link'
-            href='assemble'
-            variant='contained'
-            color='secondary'
-          >
-            Armar Menú
+        <Button
+          role='link'
+          href='assemble'
+          variant='contained'
+          color='secondary'
+        >
+          Armar Menú
             <PlaylistAddCheckIcon className='icon' />
-          </Button>
-        </div>
+        </Button>
+      </div>
     </>
   );
 }

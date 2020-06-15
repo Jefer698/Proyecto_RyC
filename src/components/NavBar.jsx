@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   navbarClass: {
-    background: 'black'
+    background: 'black',
   },
   list: {
     width: 250,
@@ -31,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
   fullList: {
     width: 'auto',
   },
+  appBarStyle: {
+    marginBottom: '30px'
+  }
 }));
 
 
@@ -78,7 +81,7 @@ const NavBar = (props) => {
     <div>
       {
         <React.Fragment key='left'>
-          <AppBar position='static'>
+          <AppBar position='static' className={classes.appBarStyle}>
             <Toolbar className={classes.navbarClass}>
               <IconButton
                 onClick={toggleDrawer('left', true)}

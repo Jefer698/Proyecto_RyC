@@ -24,10 +24,15 @@ const useStyles = makeStyles(() => ({
 }));
 
 const buttonsMenu = [
-  {
-    href: 'menusemanal',
-    name: 'MENÚ SEMANAL'
-  }
+  { href: 'login', name: 'CUENTA' },
+  { href: 'register', name: 'REGISTRARSE' },
+  { href: 'menu-maintainer', name: 'ENTRAR COMO ADMINISTRADOR' },
+  { href: 'menusemanal', name: 'MENÚ SEMANAL' },
+  { href: 'selection', name: 'SELECCIONAR MENÚ' },
+  { href: 'assemble', name: 'ARMAR MENÚ' },
+  { href: 'menu-maintainer', name: 'MANTENEDOR MENÚ' },
+  { href: 'pedidos-maintainer', name: 'MANTENEDOR PEDIDOS' }
+
 ]
 
 const HomeForm = () => {
