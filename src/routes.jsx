@@ -14,7 +14,7 @@ import MenuSemanal from './pages/MenuSemanal';
 import EnvioForm from './pages/Envio';
 import MenuMaintainer from './pages/MenuMaintainer';
 import PedidosMaintainer from './pages/PedidosMaintainer';
-
+import Pago from './pages/Pago'
 
 export const routes = [
   {
@@ -88,5 +88,10 @@ export const routes = [
   {
     path: '/pedidos-maintainer',
     component: PedidosMaintainer
+  },
+
+  {
+    path: '/pago',
+    component: Pago
   }
 ]

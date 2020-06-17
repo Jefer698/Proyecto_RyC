@@ -590,3 +590,27 @@ height:380px;
    margin-left: 50px;
    margin-top: 3px;
 }
+.inenvio{
+   width:60%;
+}
+.inenvio2{
+   width:40%;
+  
+}
+.infecha{
+   display:"block";
+
+}
+.inline{
+   display: inline;
+   
+}
+.inline2{
+   display: inline;
+   color:black;
+   font-weight: bolder;
+
+}
+.monto{
+   color:black;
+}
