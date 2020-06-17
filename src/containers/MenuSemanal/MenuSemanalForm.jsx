@@ -83,7 +83,7 @@ export default function VerticalTabs() {
           <Grid item>
               
             <ButtonBase className={selectionop.image}>
-              <img className={selectionop.img} alt="complex" src="images/especias.jpg" />
+              <img className={selectionop.img} alt="complex" src="images/tallarines.jpg" />
             </ButtonBase>
           </Grid>
           <Grid item xs={12} sm container>

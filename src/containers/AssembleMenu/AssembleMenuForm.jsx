@@ -33,7 +33,7 @@ export default function ActionsInExpansionPanelSummary() {
           />
         </ExpansionPanelSummary>
         <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
-        <img className={imgop.img} alt="complex" src="images/especias.jpg" />
+        <img className={imgop.img} alt="complex" src="images/lechuga.jpg" />
         <div className="inputicon">
        
       </div>
@@ -53,6 +53,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Tomate"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/tomate.jpg" />
         <div className="inputicon">
         
       </div>
@@ -74,6 +76,8 @@ export default function ActionsInExpansionPanelSummary() {
         
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/apio.jpg" />
         <div className="inputicon">
      
       </div>
@@ -96,6 +100,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Cazuela"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/cazuelapollo.jpg" />
         <div className="inputicon">
      
       </div>
@@ -115,6 +121,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Arroz con pollo"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/arrozconpollo.jpg" />
         <div className="inputicon">
     
       </div>
@@ -134,6 +142,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Tallarines con pollo"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/tallarines.jpg" />
         <div className="inputicon">
       
       </div>
@@ -156,6 +166,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Coca-Cola"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/cocacola.jpg" />
         <div className="inputicon">
       
       </div>
@@ -175,6 +187,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Jugo de naranja"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/naranja.jpg" />
         <div className="inputicon">
       
       </div>
@@ -194,6 +208,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Fanta"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/fanta.jpg" />
         <div className="inputicon">
         
       </div>
@@ -216,6 +232,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Flan"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/flan.jpg" />
         <div className="inputicon">
         
       </div>
@@ -235,6 +253,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Arroz con leche"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/arrozconleche.jpg" />
         <div className="inputicon">
       
       </div>
@@ -254,6 +274,8 @@ export default function ActionsInExpansionPanelSummary() {
             label="Helado"
           />
         </ExpansionPanelSummary>
+        <p>Detalle: CONTIENE UNA ENSALDA DE LECHUGA ACOMPAÑADA DE LOS CONDIMENTOS SAL, LIMON , ACEITE DE OLIVA</p>
+        <img className={imgop.img} alt="complex" src="images/helado.jpg" />
         <div className="inputicon">
        
       </div>
