@@ -132,9 +132,12 @@ export default function EnvioForm() {
       
     
       <Button
+       role="link"
+       href="pago"
         variant="contained"
         color="primary"
         className={inop.button}
+
       >
         Pagar
         <ArrowForwardIosIcon/> 

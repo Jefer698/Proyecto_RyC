@@ -81,6 +81,7 @@ export default class RegisterForm extends React.Component {
             value={name}
 
           />
+          
           <InputLine
             name="surname"
             label="Apellido"

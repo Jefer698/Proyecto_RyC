@@ -1,7 +1,7 @@
 
 import React from 'react';
 import SelectLine from '../components/SelectLine';
-import InputLine from '../components/InputLine';
+import InputLineHome from '../components/InputLineHome';
 import Button from '@material-ui/core/Button';
 import { isEmpty } from '../utils/Validations';
 
@@ -79,7 +79,7 @@ export default class NavBarHome extends React.Component {
     return (
       < >
         <div className="navhome" >
-          <div className="a1">
+      
 
             <SelectLine
               label="Seleccion Comuna"
@@ -91,18 +91,18 @@ export default class NavBarHome extends React.Component {
               onChange={this.onChange}
               value={location}
             />
-          </div>
-          <div className="a2">
-            <InputLine
+      
+         
+            <InputLineHome
               name="dire"
-              type="text"
-              placeholder="Calle y numero de puerta"
+             
+              label="Calle y numero de puerta"
               required={true}
               onChange={this.onChange}
               error={errors.dire}
               value={dire}
             />
-          </div>
+         
           <Button variant="contained" color="secondary" className="buscar"  onClick={this.doHome}>
             Buscar
           </Button>

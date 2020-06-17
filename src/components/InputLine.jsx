@@ -1,5 +1,5 @@
 import React from 'react';
-import LineField from './LineField';
+
 import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -10,15 +10,16 @@ const useStyles = makeStyles((theme) => ({
   },
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 300,
-    backgroundColor: 'whitesmoke',
-    borderRadius: '5px!important'
+    minWidth: 500,
+ backgroundColor:"white",
+
   },
 }));
 
 const InputLine = (props) => {
   const { label,
     type,
+    className,
     placeholder,
     required,
     minLength,
@@ -38,13 +39,14 @@ const InputLine = (props) => {
 
 
   return (
-    <div>
-      <LineField label={label}>
+    <>
+   
         <FormControl className={classes.formControl}>
-          <TextField
+        <TextField
+           className={className}
             label={label}
-            variant='outlined'
-            type={type}
+           type={type}
+           style={{ margin: 8 }}
             placeholder={placeholder}
             required={required}
             minLength={minLength}
@@ -58,7 +60,13 @@ const InputLine = (props) => {
             value={value}
             title={title}
             list={list && list.id}
-          />
+          margin="normal"
+          InputLabelProps={{
+            shrink: true,
+          }}
+          variant="outlined"
+        />
+          
         </FormControl>
         {list &&
           <datalist id={list.id}>
@@ -67,8 +75,7 @@ const InputLine = (props) => {
             )}
           </datalist>
         }
-      </LineField>
-    </div>
+    </>
   );
 }
 
