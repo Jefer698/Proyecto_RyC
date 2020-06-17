@@ -85,7 +85,7 @@ export default function CenteredGrid() {
         <InputLine
           
           label="Codigo de seguridad"
-          type="number"
+         type="text"
           required={true}
           minLength={3}
           maxLength={3}
