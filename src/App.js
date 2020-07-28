@@ -5,12 +5,15 @@ import {
   Switch,
   Route
 } from 'react-router-dom';
-
+import { browserHistory } from 'react-router';
 import { routes } from './routes';
+
 
 const App = () => {
   return (
-    <Router>
+    <Router
+    history={browserHistory}
+    >
       <Switch>
         {
           routes.map((route) => (

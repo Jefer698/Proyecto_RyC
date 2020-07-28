@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar';
 // import Content from '../components/Content';
 import CustomizedSelects from '../containers/SelectionMenu/SelectionMenuForm';
 // import HeaderBg from '../components/HeaderBg';
-import { navLinkUser } from '../data/NavLinks';
+import { navLinkUserMenu } from '../data/NavLinks';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -42,7 +42,7 @@ export default function AssembleMenu() {
         </Grid>
     </div>
       </div>
-      <NavBar links={navLinkUser} />
+      <NavBar links={navLinkUserMenu} />
       <CustomizedSelects />
     </>
   );

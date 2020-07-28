@@ -3,6 +3,7 @@ import InputLine from '../components/InputLine';
 import Button from '@material-ui/core/Button';
 import { validatePassword, validateEmail } from '../utils/Validations';
 import PersonIcon from '@material-ui/icons/Person';
+import { login } from '../api';
 
 export default class LoginForm extends React.Component {
   state = {
@@ -19,26 +20,19 @@ export default class LoginForm extends React.Component {
 
 
   doLogin = (event) => {
-
-    const {
-      email,
-      password } = this.state.loginData;
-    const emailError = !validateEmail(email);
-    const passwordError = !validatePassword(password, email);
-
-
-    console.log('Email error: ' + emailError);
-    console.log('Password error: ' + passwordError);
-
-    this.setState({
-      errors: {
-        email: emailError,
-        password: passwordError
-      }
-
-    });
     event.preventDefault();
+
+    login(this.state.loginData)
+      .then(response => {
+        return response.text();
+      })
+      .then(token => {
+        localStorage.setItem('token',token);
+
+       
+      });
   }
+
   onChange = (name, event) => {
     const value = event.target.value;
     const loginData = Object.assign({}, this.state.loginData)

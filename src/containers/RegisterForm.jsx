@@ -1,57 +1,52 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
 import InputLine from '../components/InputLine';
-import { validatePassword, validateEmail, isEmpty, validateConfirmation } from '../utils/Validations';
 
+import { validatePassword, validateEmail, isEmpty, validateConfirmation } from '../utils/Validations';
+import { register } from '../api';
 export default class RegisterForm extends React.Component {
   state = {
     registerData: {
       name: '',
-      surname: '',
       email: '',
-      confirmation: '',
       password: ''
 
     },
     errors: {
 
       name: false,
-      surname: false,
       email: false,
-      confirmation: false,
       password: false
 
     }
   };
 
 
-  doLogin = (event) => {
+  doRegister = (event) => {
 
     const {
       name,
-      surname,
       email,
-      confirmation,
       password
     } = this.state.registerData;
     const nameError = isEmpty(name);
-    const surnameError = isEmpty(surname);
     const emailError = !validateEmail(email);
-    const confirmationError = !validateConfirmation(confirmation, email);
     const passwordError = !validatePassword(password, email);
 
     this.setState({
       errors: {
-        name: nameError,
-        surname: surnameError,
+        name: nameError,      
         email: emailError,
         password: passwordError,
-        confirmation: confirmationError
+       
 
       }
 
     });
     event.preventDefault();
+    register(this.state.registerData)
+    this.props.history.push('/login')
+      
   }
   onChange = (name, event) => {
     const value = event.target.value;
@@ -65,7 +60,7 @@ export default class RegisterForm extends React.Component {
   render() {
     const {
       email,
-      password, name, surname, confirmation } = this.state.registerData;
+      password, name} = this.state.registerData;
     const { errors } = this.state;
     return (
       <>
@@ -82,17 +77,7 @@ export default class RegisterForm extends React.Component {
 
           />
           
-          <InputLine
-            name="surname"
-            label="Apellido"
-            type="text"
-            placeholder="Ingresar apellido"
-            required={true}
-            onChange={this.onChange}
-            error={errors.surname}
-            value={surname}
-
-          />
+     
           <InputLine
             name="email"
             label="Correo"
@@ -104,17 +89,7 @@ export default class RegisterForm extends React.Component {
             value={email}
 
           />
-          <InputLine
-            name="confirmation"
-            label="Confirmar correo"
-            type="text"
-            placeholder="Correo@ejemplo.cl"
-            required={true}
-            onChange={this.onChange}
-            error={errors.confirmation}
-            value={confirmation}
-
-          />
+        
 
           <InputLine
             name="password"
@@ -128,7 +103,7 @@ export default class RegisterForm extends React.Component {
             error={errors.password}
             value={password}
           />
-          <Button variant="contained" color="secondary" className="boton2" onClick={this.doLogin}>
+          <Button variant="contained" color="secondary" className="boton2" onClick={this.doRegister}>
             REGISTRARME
           </Button>
         </form>

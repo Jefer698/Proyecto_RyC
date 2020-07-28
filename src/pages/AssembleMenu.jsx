@@ -5,11 +5,11 @@ import NavBar from '../components/NavBar';
 // import Content from '../components/Content';
 // import BranchOfficeForm from '../containers/BranchOfficeForm';
 import ActionsInExpansionPanelSummary from '../containers/AssembleMenu/AssembleMenuForm';
-import { navLinkUser } from '../data/NavLinks';
+import { navLinkUserMenu } from '../data/NavLinks';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-
+import { getMenu } from '../api';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -27,10 +27,17 @@ const useStyles = makeStyles((theme) => ({
  
     },
   }));
-export default function BranchOffice() {
+export default function AssembleMenu() {
+
+   
+
+  
+
   const classes = useStyles();
+
   return (
     <>
+    
       <div className='local'>
       <div className={classes.root}>
       <Grid container spacing={3}>
@@ -41,7 +48,7 @@ export default function BranchOffice() {
     </div>
       </div>
       <div className='armarbg'>
-        <NavBar links={navLinkUser} />
+        <NavBar links={navLinkUserMenu} />
         <ActionsInExpansionPanelSummary />
       </div>
     </>

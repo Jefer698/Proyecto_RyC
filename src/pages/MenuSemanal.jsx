@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar';
 // import Footer from '../components/Footer';
 // import Content from '../components/Content';
 import VerticalTabs from '../containers/MenuSemanal/MenuSemanalForm';
-import { navLinkUser } from '../data/NavLinks';
+import { navLinkUserMenu } from '../data/NavLinks';
 import { dataMenu } from '../data/dataMenu';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
@@ -29,6 +29,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const Work = () => {
+
   const classes = useStyles();
   return (
     <>
@@ -41,7 +42,7 @@ const Work = () => {
         </Grid>
     </div>
       </div>
-      <NavBar links={navLinkUser} />
+      <NavBar links={navLinkUserMenu} />
       <VerticalTabs dataMenu={dataMenu}/>
     </>
   );
