@@ -12,8 +12,6 @@ export function login(usuario){
       });
     
 }
-
-
 export function register(usuario){
    fetch('http://localhost:5000/register', {
         method: 'POST',

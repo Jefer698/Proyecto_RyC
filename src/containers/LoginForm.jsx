@@ -28,7 +28,7 @@ export default class LoginForm extends React.Component {
       })
       .then(token => {
         localStorage.setItem('token',token);
-
+        //his.props.history.push('/menusemanal'); Profe este comando no nos funciona
        
       });
   }

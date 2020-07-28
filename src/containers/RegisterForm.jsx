@@ -45,7 +45,7 @@ export default class RegisterForm extends React.Component {
     });
     event.preventDefault();
     register(this.state.registerData)
-    this.props.history.push('/login')
+    //this.props.history.push('/login')Profe este comando no nos funciona
       
   }
   onChange = (name, event) => {
