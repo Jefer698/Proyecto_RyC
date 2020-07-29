@@ -15,7 +15,7 @@ import EnvioForm from './pages/Envio';
 import MenuMaintainer from './pages/MenuMaintainer';
 import PedidosMaintainer from './pages/PedidosMaintainer';
 import Pago from './pages/Pago';
-import Logout from './pages/Logout'
+import Logout from './pages/Logout';
 export const routes = [
   {
     path: '/',

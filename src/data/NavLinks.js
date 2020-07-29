@@ -5,7 +5,7 @@ export const navLinkUser = [
   { href: 'menusemanal', title: 'MENÚ SEMANAL' },
   { href: 'assemble', title: 'ARMAR MENÚ' },
   { href: 'selection', title: 'SELECCIONAR MENÚ' },
-  {href:'logout',title:'Salir'}
+  
 ];
 
 export const navLinkUserMenu = [

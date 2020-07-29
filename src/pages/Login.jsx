@@ -5,7 +5,6 @@ import Footer from '../components/Footer';
 import Content from '../components/Content';
 import LoginForm from '../containers/LoginForm';
 import { navLinkUser } from '../data/NavLinks';
-
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -27,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
  
     },
   }));
-export default function Login() {
+export default function Login(props) {
   const classes = useStyles();
 
   return (
@@ -43,7 +42,7 @@ export default function Login() {
       </div>
       <NavBar links={navLinkUser} />
       <Content title='Login'>
-        <LoginForm />
+        <LoginForm  {...props} />
       </Content>
       <Footer />
     </>

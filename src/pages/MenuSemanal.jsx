@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const Work = () => {
+const Work = (props) => {
 
   const classes = useStyles();
   return (

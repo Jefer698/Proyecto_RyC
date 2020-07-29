@@ -27,16 +27,19 @@ export function register(usuario){
       });
     
 }
-export function getMenu(){
-    const token = localStorage.getItem('token')
-    return fetch('http://localhost:5000/get_pedidos', {
-        method: 'GET',
+export function getMenu(menus){
+    return fetch('http://localhost:5000/add_week_menu', {
+        method: 'POST',
+        body: JSON.stringify({
+            name: menus.menu,
+            description:menus.detail ,
+            salad: menus.salad, 
+            dessert: menus.dessert, 
+            drink: menus.drink,
+
+        }),
         headers:{
-            'Content-Type': 'application/json',
-            'Authorization': 'Bearer' + token
+            'Content-Type': 'application/json'
         }
       });
-    
-}
-    
-
+    }

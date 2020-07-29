@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 
-export default function Register() {
+export default function Register(props) {
   const classes = useStyles();
   return (
     <>
@@ -43,7 +43,7 @@ export default function Register() {
       </div>
       <NavBar links={navLinkUser} />
       <Content title='REGISTRO' >
-        <RegisterForm />
+        <RegisterForm {...props} />
       </Content>
     </>
   );

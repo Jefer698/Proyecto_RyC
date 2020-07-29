@@ -5,6 +5,7 @@ import { validatePassword, validateEmail } from '../utils/Validations';
 import PersonIcon from '@material-ui/icons/Person';
 import { login } from '../api';
 
+
 export default class LoginForm extends React.Component {
   state = {
     loginData: {
@@ -20,16 +21,41 @@ export default class LoginForm extends React.Component {
 
 
   doLogin = (event) => {
+    
+    const {
+      email,
+      password } = this.state.loginData;
+    const emailError = !validateEmail(email);
+    const passwordError = !validatePassword(password, email);
+
+
+    console.log('Email error: ' + emailError);
+    console.log('Password error: ' + passwordError);
+
+    this.setState({
+      errors: {
+        email: emailError,
+        password: passwordError
+      }
+
+    });
     event.preventDefault();
 
     login(this.state.loginData)
       .then(response => {
+        if(!response.ok){
+          throw Error(response.statusText);
+        }
         return response.text();
       })
       .then(token => {
         localStorage.setItem('token',token);
-        //his.props.history.push('/menusemanal'); Profe este comando no nos funciona
+        this.props.history.push('/menusemanal'); 
        
+      })
+      .catch(err => {
+        alert('Usuario no registrado o datos ingresados invalidos');
+        this.props.history.push('/login');
       });
   }
 

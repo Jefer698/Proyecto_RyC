@@ -1,16 +1,16 @@
-
 import React from 'react';
-import {Redirect} from 'react-router'
 
 
-export default function Logout() {
-  localStorage.removeItem('token')
+
+
+export default function Logout(props) {
+  localStorage.removeItem('token');
+  props.history.push('/');
 
   return (
-   <Redirect to='/' />
+  <div>
+
+  </div>
 
   );
 }
-
-
-
